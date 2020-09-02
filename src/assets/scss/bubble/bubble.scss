@@ -1,0 +1,18 @@
+.bubble {
+  position: absolute;
+  & img {
+    width: 100%;
+  }
+
+  .section-3 & {
+    &_sm {
+      top: marginIns(130, $valLeptop1);
+      right: 0;
+    }
+
+    &_big {
+      top: marginIns(785, $valLeptop1);
+      right: marginIns(189, $valLeptop1);
+    }
+  }
+}

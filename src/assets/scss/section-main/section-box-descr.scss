@@ -1,0 +1,26 @@
+.section-box-descr {
+  font-family: $f-p;
+  font-style: normal;
+  font-weight: normal;
+  @include fzEl ($fz, 40);
+  line-height: 107%;
+  letter-spacing: -0.02em;
+  color: $c-main-light;
+
+  & p {
+    margin: 0 0 marginIns(50, $valLeptop1);
+
+    &.mark {
+      font-weight: bold;
+    }
+
+    .section-3 & {
+      color: $c-main-dark;
+      font-weight: bold;
+      @include fzEl ($fz, 36);
+      line-height: 107%;
+      letter-spacing: -0.02em;
+      font-family: $f-o;
+    }
+  }
+}

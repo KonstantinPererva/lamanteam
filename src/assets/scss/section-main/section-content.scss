@@ -1,0 +1,23 @@
+.section-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+
+  .section-2 & {
+    padding: 0 marginIns(48, $valLeptop1);
+
+    &__left {
+      margin: 0 marginIns(99, $valLeptop1) 0 0;
+    }
+  }
+
+  .section-3 & {
+    &__left {
+      margin: 0 marginIns(55, $valLeptop1) 0 0;
+    }
+
+    &__right {
+      padding: marginIns(350, $valLeptop1) 0 0;
+    }
+  }
+}

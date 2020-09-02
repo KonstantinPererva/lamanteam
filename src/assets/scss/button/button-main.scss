@@ -1,13 +1,13 @@
 .button-main {
   @include button;
-  @include boxSizeIns(350, 70, $valLeptop1);
+  @include heightIns(70, $valLeptop1);
   font-style: normal;
   font-weight: bold;
   @include fzEl ($fz, 30);
   line-height: 100%;
-  padding: 0 marginIns(34, $valLeptop1);
+  padding: 0 marginIns(60, $valLeptop1);
   border-radius: marginIns(35, $valLeptop1);
-  text-transform: uppercase;
+  font-family: $f-p;
 
   &_dark {
     color: #fff;
@@ -42,6 +42,7 @@
     color: #fff;
     background: #333;
     border-color: #333;
+    border-width: 1px;
 
     & svg path {
       fill: #fff;

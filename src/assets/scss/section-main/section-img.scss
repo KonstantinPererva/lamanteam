@@ -1,0 +1,18 @@
+.section-img {
+  overflow: hidden;
+  border-radius: 100%;
+
+  & img {
+    width: 100%;
+    max-height: none;
+  }
+
+  .section-2 & {
+    @include boxSizeIns(830, 830, $valLeptop1);
+  }
+
+  .section-3 & {
+    @include boxSizeIns(1300, 1300, $valLeptop1);
+    margin: 0 0 0 marginIns(-383, $valLeptop1);
+  }
+}

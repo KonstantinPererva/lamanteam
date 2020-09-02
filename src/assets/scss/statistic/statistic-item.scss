@@ -1,0 +1,28 @@
+.statistic-item {
+  flex-shrink: 0;
+  text-align: center;
+  color: $c-main-light;
+  font-style: normal;
+  font-family: $f-p;
+
+  &:first-child {
+    margin: 0 marginIns(105, $valLeptop1) 0 0;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &__num {
+    font-weight: bold;
+    @include fzEl ($fz, 120);
+    line-height: 107%;
+    display: block;
+  }
+
+  &__text {
+    @include fzEl ($fz, 40);
+    line-height: 107%;
+    display: block;
+  }
+}

@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  background: #55C1DE;
+  background: #fff;
   font-family: $f-o;
 }
 
@@ -24,6 +24,8 @@ html {
   @include widthSizeIns(1600, $valLeptop1);
   padding: 0 15px;
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
 }
 
 img {
@@ -49,6 +51,5 @@ a, button {
 
   &:hover, &:focus, &:active {
     outline: none;
-    border: 0;
   }
 }

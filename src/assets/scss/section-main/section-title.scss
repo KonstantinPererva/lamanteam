@@ -1,0 +1,17 @@
+.section-title {
+  font-style: normal;
+  font-weight: bold;
+  font-family: $f-p;
+  @include fzEl ($fz, 36);
+  line-height: 95%;
+
+  .section-2 & {
+    color: #82D2F3;
+    margin: 0 0 marginIns(109, $valLeptop1);
+  }
+
+  .section-3 & {
+    color: $c-main-dark;
+    margin: 0 0 marginIns(113, $valLeptop1);
+  }
+}

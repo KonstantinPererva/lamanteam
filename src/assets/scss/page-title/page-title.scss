@@ -1,0 +1,9 @@
+.page-title {
+  font-style: normal;
+  font-weight: bold;
+  font-family: $f-p;
+  @include fzEl ($fz, 64);
+  margin: 0 0 marginIns(99, $valLeptop1);
+  line-height: 95%;
+  color: $c-main-dark
+}

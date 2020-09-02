@@ -1,0 +1,7 @@
+.page-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  @include fzEl ($fz, 36);
+  line-height: 115%;
+  color: $c-main-dark;
+}

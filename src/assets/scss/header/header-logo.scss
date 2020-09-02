@@ -1,0 +1,8 @@
+.header-logo {
+  margin: 0 marginIns(133, $valLeptop1) 0 0;
+  @include boxSizeIns (96, 96, $valLeptop1);
+
+  & img {
+    width: 100%;
+  }
+}

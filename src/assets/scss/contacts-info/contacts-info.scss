@@ -1,0 +1,46 @@
+.contacts-info {
+  display: flex;
+  align-items: center;
+
+  & .phone {
+    display: flex;
+    align-items: center;
+    margin: 0 marginIns(60, $valLeptop1) 0 0;
+
+    &__ico {
+      margin: 0 marginIns(15, $valLeptop1) 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include boxSizeIns(35, 31, $valLeptop1);
+
+      & svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__num {
+      font-style: normal;
+      font-weight: bold;
+      @include fzEl ($fz, 24);
+      line-height: 115%;
+      color: $c-main-dark;
+
+      & a {
+        color: $c-main-dark;
+
+        &:hover {
+          text-decoration: none;
+          color: $c-main-dark;
+        }
+      }
+    }
+  }
+
+  & .soc-net-list {
+    display: flex;
+    align-items: center;
+  }
+}
+

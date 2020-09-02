@@ -1,0 +1,38 @@
+// Font
+$f-p: 'Podkova', serif;
+$f-o: 'Open Sans', sans-serif;
+
+// Font size
+$fz: 16;
+
+// Main color
+$c-main: #55C1DE;
+$c-main-light: #82D2F3;
+$c-main-dark: #12295F;
+
+//media max-width
+$valLeptop1: 1920;
+$valLeptop2: 1600;
+$valLeptop3: 1440;
+$valLeptop4: 1366;
+$valLeptop5: 1200;
+$valTablet1: 1151;
+$valTablet2: 1024;
+$valTablet3: 991;
+$valTablet4: 768;
+$valMobile1: 767;
+$valMobile2: 639;
+$valMobile3: 479;
+
+$laptop1: 'max-width: #{$valLeptop1}px';
+$laptop2: 'max-width: #{$valLeptop2}px';
+$laptop3: 'max-width: #{$valLeptop3}px';
+$laptop4: 'max-width: #{$valLeptop4}px';
+$laptop5: 'max-width: #{$valLeptop5}px';
+$tablet1: 'max-width: #{$valTablet1}px';
+$tablet2: 'max-width: #{$valTablet2}px';
+$tablet3: 'max-width: #{$valTablet3}px';
+$tablet4: 'max-width: #{$valTablet4}px';
+$mobile1: 'max-width: #{$valMobile1}px';
+$mobile2: 'max-width: #{$valMobile2}px';
+$mobile3: 'max-width: #{$valMobile3}px';

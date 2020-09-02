@@ -1,0 +1,23 @@
+.section-main {
+  position: relative;
+
+  &.section {
+    &-1 {
+      padding: 8% 0 0;
+      @include heightIns(1590, $valLeptop1);
+
+      & .banner {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

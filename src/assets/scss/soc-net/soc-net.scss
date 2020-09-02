@@ -1,0 +1,23 @@
+.soc-net {
+  & .soc-net-list {
+    display: flex;
+    align-items: center;
+  }
+
+  & .soc-net-link {
+    margin: 0 marginIns(20, $valLeptop1) 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include boxSizeIns(35, 35, $valLeptop1);
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

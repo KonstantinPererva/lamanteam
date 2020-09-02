@@ -1,0 +1,50 @@
+.button-main {
+  @include button;
+  @include boxSizeIns(350, 70, $valLeptop1);
+  font-style: normal;
+  font-weight: bold;
+  @include fzEl ($fz, 30);
+  line-height: 100%;
+  padding: 0 marginIns(34, $valLeptop1);
+  border-radius: marginIns(35, $valLeptop1);
+  text-transform: uppercase;
+
+  &_dark {
+    color: #fff;
+    background: $c-main-dark;
+    border-color: $c-main-dark;
+  }
+
+  &_blue {
+    color: $c-main-dark;
+    background: $c-main;
+    border-color: $c-main;
+  }
+
+  &_white {
+    color: #fff;
+    background: $c-main;
+    border-color: $c-main;
+  }
+
+  &_transparent {
+    color: $c-main;
+    background: transparent;
+    border-color: $c-main;
+  }
+
+  &_small {
+    min-width: 210px;
+    text-transform: none;
+  }
+
+  &:hover, &:focus, &:active {
+    color: #fff;
+    background: #333;
+    border-color: #333;
+
+    & svg path {
+      fill: #fff;
+    }
+  }
+}

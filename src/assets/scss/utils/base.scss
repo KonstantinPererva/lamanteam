@@ -1,0 +1,54 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #55C1DE;
+  font-family: $f-o;
+}
+
+html {
+  @include fzIns($fz, $valLeptop1);
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  //max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.page-content {
+  @include widthSizeIns(1600, $valLeptop1);
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+  border: 0;
+}
+
+svg {
+  display: block;
+  flex-shrink: 0;
+
+  & * {
+    transition: 150ms;
+  }
+}
+
+a, button {
+  text-decoration: none;
+  outline: none;
+
+  &:hover, &:focus, &:active {
+    outline: none;
+    border: 0;
+  }
+}

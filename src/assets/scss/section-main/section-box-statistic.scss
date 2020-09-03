@@ -1,3 +1,7 @@
 .section-box-statistic {
   margin: marginIns(75, $valLeptop1) 0 marginIns(75, $valLeptop1);
+
+  @media ($mobile1) {
+    margin: marginIns(36, $valMobile4) 0 marginIns(61, $valMobile4);
+  }
 }

@@ -5,5 +5,10 @@
   @include fzEl ($fz, 64);
   margin: 0 0 marginIns(99, $valLeptop1);
   line-height: 95%;
-  color: $c-main-dark
+  color: $c-main-dark;
+
+  @media ($mobile1) {
+    @include fzElMob ($fz, 24);
+    margin: 0 0 marginIns(17, $valMobile4);
+  }
 }

@@ -1,6 +1,11 @@
 .section-img {
+  display: block;
   overflow: hidden;
   border-radius: 100%;
+
+  @media ($mobile1) {
+    border-radius: 0;
+  }
 
   & img {
     width: 100%;
@@ -9,6 +14,10 @@
 
   .section-2 & {
     @include boxSizeIns(830, 830, $valLeptop1);
+
+    @media ($mobile1) {
+      @include boxSizeIns(360, 327, $valMobile4);
+    }
   }
 
   .section-3 & {

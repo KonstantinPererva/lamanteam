@@ -9,6 +9,14 @@
   border-radius: marginIns(35, $valLeptop1);
   font-family: $f-p;
 
+  @media ($mobile1) {
+    width: sizeIns(320, $valMobile4);
+    padding: 0 marginIns(30, $valMobile4);
+    border-radius: marginIns(30, $valMobile4);
+    @include heightIns(55, $valMobile4);
+    @include fzElMob ($fz, 18);
+  }
+
   &_dark {
     color: #fff;
     background: $c-main-dark;

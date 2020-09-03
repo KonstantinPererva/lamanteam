@@ -7,6 +7,10 @@
 
   &:first-child {
     margin: 0 marginIns(105, $valLeptop1) 0 0;
+
+    @media ($mobile1) {
+      margin: 0 marginIns(55, $valMobile4) 0 0;
+    }
   }
 
   &:last-child {
@@ -18,11 +22,20 @@
     @include fzEl ($fz, 120);
     line-height: 107%;
     display: block;
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 64);
+      margin: 0 0 marginIns(7, $valMobile4);
+    }
   }
 
   &__text {
     @include fzEl ($fz, 40);
     line-height: 107%;
     display: block;
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 18);
+    }
   }
 }

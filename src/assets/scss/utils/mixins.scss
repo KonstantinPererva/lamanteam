@@ -101,6 +101,10 @@
   font-size: calc(#{$fzCurrent} / #{$fzStart} * 1rem);
 }
 
+@mixin fzElMob($fzStart, $fzCurrent) {
+  font-size: calc(#{$fzCurrent} / #{$fzStart} * 5.33333rem);
+}
+
 @function marginIns($margStart, $widthStart) {
   $margStart: calc(#{$margStart} * 100vw / #{$widthStart});
 

@@ -22,13 +22,14 @@ html {
 
 .page-content {
   width: sizeIns(1600, $valLeptop1);
-  padding: 0 15px;
+  padding: 0 sizeIns(15, $valLeptop1);
   margin: 0 auto;
   z-index: 1;
   position: relative;
 
   @media ($mobile1) {
     width: 100%;
+    padding: 0 sizeIns(15, $valMobile4);
   }
 }
 

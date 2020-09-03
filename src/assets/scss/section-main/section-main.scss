@@ -14,6 +14,10 @@
         right: 0;
         z-index: 0;
 
+        @media ($mobile1) {
+          top: sizeIns(53, $valMobile4);
+        }
+
         & img {
           width: 100%;
         }
@@ -26,9 +30,17 @@
     }
 
     &-2 {
+      position: relative;
+      z-index: 1;
       margin: sizeIns(-300, $valLeptop1) 0 0;
       padding: sizeIns(221, $valLeptop1) 0 0;
       @include heightIns(1660, $valLeptop1);
+
+      @media ($mobile1) {
+        @include heightIns(1224, $valMobile4);
+        padding: sizeIns(70, $valMobile4) 0 0;
+        margin: 0;
+      }
 
       & .banner {
         position: absolute;
@@ -37,6 +49,7 @@
         left: 0;
         right: 0;
         z-index: 0;
+        overflow: hidden;
 
         & img {
           width: 100%;

@@ -26,27 +26,41 @@
       & svg {
         width: 100%;
         height: 100%;
+
+        & path {
+          @media ($mobile1) {
+            fill: $c-main-light;
+          }
+        }
       }
     }
 
     &__num {
       font-style: normal;
       font-weight: bold;
-      @include fzEl ($fz, 24);
       line-height: 115%;
+      @include fzEl ($fz, 24);
       color: $c-main-dark;
 
       @media ($mobile1) {
-        @include fzEl ($fz, 12);
+        @include fzElMob ($fz, 12);
         color: $c-main-light;
       }
 
       & a {
         color: $c-main-dark;
 
+        @media ($mobile1) {
+          color: $c-main-light;
+        }
+
         &:hover {
           text-decoration: none;
           color: $c-main-dark;
+
+          @media ($mobile1) {
+            color: $c-main-light;
+          }
         }
       }
     }

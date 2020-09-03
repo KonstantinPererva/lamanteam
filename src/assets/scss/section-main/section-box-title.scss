@@ -7,6 +7,11 @@
   color: $c-main-light;
   margin: 0 0 marginIns(87, $valLeptop1);
 
+  @media ($mobile1) {
+    @include fzElMob ($fz, 24);
+    margin: 0 0 marginIns(20, $valMobile4);
+  }
+
   .section-3 & {
     color: $c-main-dark;
     margin: 0 0 marginIns(150, $valLeptop1);

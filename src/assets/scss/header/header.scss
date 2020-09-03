@@ -6,4 +6,19 @@
   @media ($mobile1) {
     margin: 0 0 marginIns(369, $valMobile4);
   }
+
+  &__mob-bg {
+    @media ($mobile1) {
+      display: block !important;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
 }

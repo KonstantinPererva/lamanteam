@@ -1,12 +1,4 @@
 .section-box-descr {
-  font-family: $f-p;
-  font-style: normal;
-  font-weight: normal;
-  @include fzEl ($fz, 40);
-  line-height: 107%;
-  letter-spacing: -0.02em;
-  color: $c-main-light;
-
   & p {
     font-family: $f-p;
     font-style: normal;
@@ -16,6 +8,15 @@
     letter-spacing: -0.02em;
     color: $c-main-light;
     margin: 0 0 marginIns(50, $valLeptop1);
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 14);
+      margin: 0 0 marginIns(14, $valMobile4);
+    }
+
+    &:last-child {
+      margin: 0;
+    }
 
     &.mark {
       font-weight: bold;

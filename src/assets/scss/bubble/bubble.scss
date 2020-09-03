@@ -6,13 +6,16 @@
   }
 
   .section-1 & {
-    @include boxSizeIns (971, 1308, $valLeptop1);
+    //@include boxSizeIns (971, 1308, $valLeptop1);
+    @include boxSizeIns (1550, 1550, $valLeptop1);
     z-index: 1;
-    top: 0;
-    left: 0;
+    top: sizeIns(-242 ,$valLeptop1);
+    left: sizeIns(-579 ,$valLeptop1);
 
     @media ($mobile1) {
-
+      @include boxSizeIns (505, 505, $valMobile4);
+      top: sizeIns(371 ,$valMobile4);
+      left: sizeIns(-128 ,$valMobile4);
     }
   }
 

@@ -1,3 +1,7 @@
 .statistic-list {
   display: flex;
+
+  @media ($mobile1) {
+    justify-content: center;
+  }
 }

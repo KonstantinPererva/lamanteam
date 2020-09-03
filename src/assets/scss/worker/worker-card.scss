@@ -1,0 +1,49 @@
+.worker-card {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  &__img {
+    flex-shrink: 0;
+    width: sizeIns(330, $valLeptop1);
+    height: sizeIns(330, $valLeptop1);
+    border-radius: 100%;
+    border: sizeIns(7, $valLeptop1) solid #12295F;
+    margin: 0 sizeIns(43, $valLeptop1) 0 0;
+    overflow: hidden;
+  }
+
+  &__name {
+    font-family: $f-p;
+    font-style: normal;
+    font-weight: bold;
+    @include fzEl ($fz, 64);
+    line-height: 95%;
+    color: $c-main-dark;
+    margin: 0 0 sizeIns(27, $valLeptop1);
+  }
+
+  &__text {
+    font-family: $f-p;
+    font-style: normal;
+    font-weight: bold;
+    @include fzEl ($fz, 36);
+    line-height: 95%;
+    color: $c-main-dark;
+  }
+
+  &_sm &__img {
+    width: sizeIns(200, $valLeptop1);
+    height: sizeIns(200, $valLeptop1);
+    margin: 0 sizeIns(40, $valLeptop1) 0 0;
+  }
+
+  &_sm &__name {
+    @include fzEl ($fz, 36);
+    margin: 0 0 sizeIns(25, $valLeptop1);
+  }
+
+  &_sm &__text {
+    @include fzEl ($fz, 24);
+  }
+}

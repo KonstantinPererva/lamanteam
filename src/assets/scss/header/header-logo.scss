@@ -2,6 +2,12 @@
   margin: 0 marginIns(133, $valLeptop1) 0 0;
   @include boxSizeIns (96, 96, $valLeptop1);
 
+  @media ($mobile1) {
+    @include boxSizeIns (40, 40, $valMobile4);
+    margin: 0 marginIns(63, $valMobile4) 0 0;
+    padding: 0;
+  }
+
   & img {
     width: 100%;
   }

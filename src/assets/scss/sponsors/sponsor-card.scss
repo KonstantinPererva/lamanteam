@@ -1,0 +1,20 @@
+.sponsor-card {
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: sizeIns(160, $valLeptop1);
+    margin: 0 0 sizeIns(39, $valLeptop1);
+  }
+
+  &__descr {
+    font-family: $f-p;
+    font-style: normal;
+    font-weight: bold;
+    @include fzEl ($fz, 36);
+    line-height: 100%;
+    text-align: center;
+    color: $c-main-dark;
+  }
+}

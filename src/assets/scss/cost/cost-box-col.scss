@@ -1,0 +1,15 @@
+.cost-box-col {
+  padding: sizeIns(55, $valLeptop1) 0 0;
+
+  &:first-child {
+    flex-shrink: 0;
+    width: sizeIns(455, $valLeptop1);
+    margin: 0 sizeIns(55, $valLeptop1) 0 0;
+  }
+
+  &:last-child {
+    padding: 0;
+    flex-shrink: 0;
+    margin: 0 0 0 sizeIns(20, $valLeptop1);
+  }
+}

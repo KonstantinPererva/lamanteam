@@ -1,4 +1,8 @@
 .header-box {
   display: flex;
   align-items: center;
+
+  @media ($mobile1) {
+    height: sizeIns(54, $valMobile4);
+  }
 }

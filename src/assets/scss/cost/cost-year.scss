@@ -1,0 +1,19 @@
+.cost-year {
+  font-family: $f-p;
+  font-style: normal;
+  font-weight: bold;
+  @include fzEl ($fz, 96);
+  line-height: 95%;
+  color: $c-main-dark;
+  margin: 0 0 marginIns(129, $valLeptop1);
+
+  & > span {
+    display: block;
+  }
+
+  &__addition {
+    @include fzEl ($fz, 30);
+    line-height: 100%;
+    margin: marginIns(25, $valLeptop1) 0 0;
+  }
+}

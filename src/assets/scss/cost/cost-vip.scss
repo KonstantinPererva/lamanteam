@@ -1,0 +1,18 @@
+.cost-vip {
+  font-family: $f-p;
+  font-style: normal;
+  font-weight: bold;
+  color: $c-main-dark;
+  display: flex;
+
+  &__price {
+    @include fzEl ($fz, 64);
+    line-height: 95%;
+    margin: 0 marginIns(26, $valLeptop1) 0 0;
+  }
+
+  &__text {
+    @include fzEl ($fz, 30);
+    line-height: 100%;
+  }
+}

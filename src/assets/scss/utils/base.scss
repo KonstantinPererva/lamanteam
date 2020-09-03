@@ -21,11 +21,15 @@ html {
 }
 
 .page-content {
-  @include widthSizeIns(1600, $valLeptop1);
+  width: sizeIns(1600, $valLeptop1);
   padding: 0 15px;
   margin: 0 auto;
   z-index: 1;
   position: relative;
+
+  @media ($mobile1) {
+    width: 100%;
+  }
 }
 
 img {

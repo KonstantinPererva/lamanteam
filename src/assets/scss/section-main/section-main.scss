@@ -3,7 +3,7 @@
 
   &.section {
     &-1 {
-      padding: marginIns(153, $valLeptop1) 0 0;
+      padding: sizeIns(153, $valLeptop1) 0 0;
       @include heightIns(1590, $valLeptop1);
 
       & .banner {
@@ -18,11 +18,16 @@
           width: 100%;
         }
       }
+
+      @media ($mobile1) {
+        @include heightIns(704, $valMobile4);
+        padding: 0;
+      }
     }
 
     &-2 {
-      margin: marginIns(-300, $valLeptop1) 0 0;
-      padding: marginIns(221, $valLeptop1) 0 0;
+      margin: sizeIns(-300, $valLeptop1) 0 0;
+      padding: sizeIns(221, $valLeptop1) 0 0;
       @include heightIns(1660, $valLeptop1);
 
       & .banner {
@@ -40,8 +45,55 @@
     }
 
     &-3 {
-      margin: marginIns(-360, $valLeptop1) 0 0;
+      //margin: sizeIns(-360, $valLeptop1) 0 0;
+      @include heightIns(940, $valLeptop1);
+    }
+
+    &-4 {
+      & .wr-section-title {
+        margin: 0 0 sizeIns(115, $valLeptop1);
+      }
+    }
+
+    &-6 {
       @include heightIns(1300, $valLeptop1);
+      padding: sizeIns(193, $valLeptop1) 0 0;
+
+      & .banner {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+
+    &-7 {
+      @include heightIns(1056, $valLeptop1);
+      padding: sizeIns(100, $valLeptop1) 0 sizeIns(53, $valLeptop1);
+    }
+
+    &-8 {
+      @include heightIns(1230, $valLeptop1);
+      padding: sizeIns(286, $valLeptop1) 0 sizeIns(50, $valLeptop1);
+
+      & .banner {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+
+        & img {
+          width: 100%;
+        }
+      }
     }
   }
 }

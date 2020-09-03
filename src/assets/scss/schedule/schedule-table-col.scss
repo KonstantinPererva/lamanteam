@@ -1,0 +1,31 @@
+.schedule-table-col {
+  font-family: $f-p;
+  font-style: normal;
+  font-weight: bold;
+  @include fzEl ($fz, 48);
+  line-height: 95%;
+  text-align: center;
+  color: $c-main-light;
+  margin: 0 sizeIns(110, $valLeptop1) 0 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & span {
+    display: block;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__time {
+    margin: sizeIns(14, $valLeptop1) 0;
+  }
+
+  &__addition {
+    @include fzEl ($fz, 30);
+    margin: 0 0 sizeIns(34, $valLeptop1);
+  }
+}

@@ -1,0 +1,22 @@
+.schedule-title {
+  font-family: $f-p;
+  font-style: normal;
+  font-weight: bold;
+  @include fzEl ($fz, 64);
+  line-height: 80%;
+  text-align: center;
+  color: $c-main-light;
+  margin: 0 0 sizeIns(87, $valLeptop1);
+
+  &__ico {
+    display: block;
+    width: sizeIns(43, $valLeptop1);
+    height: sizeIns(63, $valLeptop1);
+    margin: 0 auto sizeIns(16, $valLeptop1);
+
+    & svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

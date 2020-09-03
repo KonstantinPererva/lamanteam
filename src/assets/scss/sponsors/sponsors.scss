@@ -1,0 +1,17 @@
+.sponsors {
+
+  &__button {
+    text-align: center;
+    margin: 0 0 sizeIns(83, $valLeptop1);
+  }
+
+  &__contacts {
+    text-align: center;
+    margin: 0 0 sizeIns(83, $valLeptop1);
+    
+    & .wr-contacts-info {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}

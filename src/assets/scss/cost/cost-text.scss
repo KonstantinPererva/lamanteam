@@ -1,0 +1,21 @@
+.cost-text {
+
+  &:before {
+    content: '';
+    display: block;
+    width: sizeIns(170, $valLeptop1);
+    height: sizeIns(20, $valLeptop1);
+    margin: sizeIns(49, $valLeptop1) 0;
+    background: $c-main-dark;
+  }
+
+  & p {
+    font-family: $f-o;
+    font-style: normal;
+    font-weight: normal;
+    @include fzEl ($fz, 24);
+    line-height: 150%;
+    color: $c-main-dark;
+    margin: 0 0 sizeIns(32, $valLeptop1);
+  }
+}

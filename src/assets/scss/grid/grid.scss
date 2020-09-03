@@ -1,0 +1,22 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-2 {
+    & > * {
+      @include grid (2, sizeIns(150, $valLeptop1), 0px);
+    }
+  }
+
+  &-3 {
+    & > * {
+      @include grid (3, sizeIns(100, $valLeptop1), 0px);
+    }
+  }
+
+  &-4 {
+    & > * {
+      @include grid (4, sizeIns(60, $valLeptop1), 0px);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.section-box-text {
+  font-family: $f-o;
+  font-style: normal;
+  font-weight: normal;
+  @include fzEl ($fz, 24);
+  line-height: 107%;
+  letter-spacing: -0.02em;
+  color: $c-main-dark;
+
+  & p {
+    margin: 0;
+  }
+
+  & .mark {
+    font-weight: bold;
+  }
+}

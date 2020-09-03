@@ -101,11 +101,13 @@
   font-size: calc(#{$fzCurrent} / #{$fzStart} * 1rem);
 }
 
-@mixin moveBg($widthStart) {
-  background-position-x: $widthStart / 100 * 1%;
+@function marginIns($margStart, $widthStart) {
+  $margStart: calc(#{$margStart} * 100vw / #{$widthStart});
+
+  @return $margStart;
 }
 
-@function marginIns($margStart, $widthStart) {
+@function sizeIns($margStart, $widthStart) {
   $margStart: calc(#{$margStart} * 100vw / #{$widthStart});
 
   @return $margStart;

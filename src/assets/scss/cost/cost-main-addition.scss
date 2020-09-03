@@ -1,0 +1,9 @@
+.cost-main-addition {
+  font-family: $f-p;
+  font-style: normal;
+  font-weight: bold;
+  @include fzEl ($fz, 24);
+  line-height: 100%;
+  color: $c-main-dark;
+  margin: 0 sizeIns(200, $valLeptop1) 0 0;
+}

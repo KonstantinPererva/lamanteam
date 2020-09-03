@@ -7,12 +7,21 @@
     align-items: center;
     margin: 0 marginIns(60, $valLeptop1) 0 0;
 
+    @media ($mobile1) {
+      margin: 0 marginIns(60, $valMobile4) 0 0;
+    }
+
     &__ico {
       margin: 0 marginIns(15, $valLeptop1) 0 0;
       display: flex;
       align-items: center;
       justify-content: center;
       @include boxSizeIns(35, 31, $valLeptop1);
+
+      @media ($mobile1) {
+        margin: 0 marginIns(10, $valMobile4) 0 0;
+        @include boxSizeIns(15, 15, $valMobile4);
+      }
 
       & svg {
         width: 100%;
@@ -26,6 +35,11 @@
       @include fzEl ($fz, 24);
       line-height: 115%;
       color: $c-main-dark;
+
+      @media ($mobile1) {
+        @include fzEl ($fz, 12);
+        color: $c-main-light;
+      }
 
       & a {
         color: $c-main-dark;

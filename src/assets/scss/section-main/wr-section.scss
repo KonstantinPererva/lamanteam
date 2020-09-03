@@ -1,3 +1,16 @@
 .wr-section {
-  background: $c-main-light;
+  padding: marginIns(194, $valLeptop1) 0 0;
+  position: relative;
+
+  & .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+
+    & img {
+      width: 100%;
+    }
+  }
 }

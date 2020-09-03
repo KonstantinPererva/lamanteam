@@ -1,0 +1,17 @@
+.cost {
+  position: relative;
+  padding: 0 sizeIns(78, $valLeptop1) 0 sizeIns(177, $valLeptop1);
+
+  & .object {
+    position: absolute;
+    left: 0;
+    top: sizeIns(-70, $valLeptop1);
+    z-index: 0;
+    width: sizeIns(283, $valLeptop1);
+    height: sizeIns(624, $valLeptop1);
+
+    & img {
+      width: 100%;
+    }
+  }
+}

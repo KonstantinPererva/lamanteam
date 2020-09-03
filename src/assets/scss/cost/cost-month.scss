@@ -1,0 +1,9 @@
+.cost-month {
+  font-family: $f-p;
+  font-style: normal;
+  font-weight: bold;
+  @include fzEl ($fz, 64);
+  line-height: 95%;
+  color: $c-main-dark;
+  margin: 0 0 marginIns(53, $valLeptop1);
+}

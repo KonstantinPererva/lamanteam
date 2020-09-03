@@ -1,0 +1,38 @@
+.switch-item {
+  margin: 0 sizeIns(25, $valLeptop1);
+  width: sizeIns(135, $valLeptop1);
+  cursor: pointer;
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    @include fzEl($fz, 24);
+    line-height: 95%;
+    color: #455052;
+    @include heightIns(50, $valLeptop1);
+    display: flex;
+    align-items: center;
+  }
+
+  &.active &__title {
+    @include fzEl($fz, 30);
+    color: $c-main-dark;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    @include boxSizeIns(50, 50, $valLeptop1);
+    margin: 0 auto;
+    background-image: url(/assets/img/logo-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+  }
+
+  &.active:before {
+    background-image: url(/assets/img/logo.png);
+    background-size: 98%;
+  }
+}

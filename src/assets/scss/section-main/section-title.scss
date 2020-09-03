@@ -6,7 +6,7 @@
   line-height: 95%;
 
   .section-2 & {
-    color: #82D2F3;
+    color: $c-main-light;
     margin: 0 0 marginIns(109, $valLeptop1);
   }
 
@@ -14,4 +14,29 @@
     color: $c-main-dark;
     margin: 0 0 marginIns(113, $valLeptop1);
   }
+
+  .section-4 & {
+    color: $c-main-dark;
+  }
+
+  .section-5 & {
+    color: $c-main-dark;
+    margin: marginIns(253, $valLeptop1) 0 marginIns(112, $valLeptop1);
+  }
+
+  .section-6 & {
+    color: $c-main-light;
+    margin: 0 0 marginIns(122, $valLeptop1);
+  }
+
+  .section-7 & {
+    color: $c-main-dark;
+    margin: 0 0 marginIns(52, $valLeptop1);
+  }
+
+  .section-8 & {
+    color: $c-main-dark;
+    margin: 0 0 marginIns(211, $valLeptop1);
+  }
 }
+

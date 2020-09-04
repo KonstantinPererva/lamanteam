@@ -8,11 +8,22 @@
   color: $c-main-light;
   margin: 0 0 sizeIns(87, $valLeptop1);
 
+  @media ($mobile1) {
+    @include fzElMob ($fz, 36);
+    margin: 0 0 marginIns(40, $valMobile4);
+  }
+
   &__ico {
     display: block;
     width: sizeIns(43, $valLeptop1);
     height: sizeIns(63, $valLeptop1);
     margin: 0 auto sizeIns(16, $valLeptop1);
+
+    @media ($mobile1) {
+      width: sizeIns(31, $valMobile4);
+      height: sizeIns(45, $valMobile4);
+      margin: 0 auto sizeIns(10, $valMobile4);
+    }
 
     & svg {
       width: 100%;

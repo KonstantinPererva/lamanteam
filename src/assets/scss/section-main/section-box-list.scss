@@ -3,6 +3,10 @@
 
   .section-4 & {
     margin: sizeIns(120, $valLeptop1) 0 sizeIns(50, $valLeptop1);
+
+    @media ($mobile1) {
+      margin: sizeIns(60, $valMobile4) 0 sizeIns(25, $valMobile4);
+    }
   }
 
   &__title {

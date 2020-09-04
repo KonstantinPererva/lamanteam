@@ -1,0 +1,8 @@
+.section-box {
+
+  .section-4 & {
+    @media ($mobile1) {
+      margin: 0 0 sizeIns(56, $valMobile4);
+    }
+  }
+}

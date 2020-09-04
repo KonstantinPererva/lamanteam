@@ -8,6 +8,11 @@
   color: $c-main-light;
   margin: 0 sizeIns(110, $valLeptop1) 0 0;
 
+  @media ($mobile1) {
+    @include fzElMob ($fz, 36);
+    margin: 0 marginIns(37, $valMobile4) 0 0;
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -22,10 +27,20 @@
 
   &__time {
     margin: sizeIns(14, $valLeptop1) 0;
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 36);
+      margin: sizeIns(26, $valMobile4) 0;
+    }
   }
 
   &__addition {
     @include fzEl ($fz, 30);
     margin: 0 0 sizeIns(34, $valLeptop1);
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 18);
+      margin: 0 0 sizeIns(20, $valMobile4);
+    }
   }
 }

@@ -1,4 +1,20 @@
 .sponsor-card {
+  @media ($mobile1) {
+    margin: 0 0 sizeIns(60, $valMobile4);
+  }
+
+  &:first-child &__img {
+    @media ($mobile1) {
+      height: sizeIns(80, $valMobile4);
+      width: sizeIns(200, $valMobile4);
+      margin-left: auto;
+      margin-right: auto;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
 
   &__img {
     display: flex;
@@ -6,6 +22,11 @@
     align-items: flex-start;
     height: sizeIns(160, $valLeptop1);
     margin: 0 0 sizeIns(39, $valLeptop1);
+
+    @media ($mobile1) {
+      height: sizeIns(140, $valMobile4);
+      margin: 0 0 sizeIns(25, $valMobile4);
+    }
   }
 
   &__descr {
@@ -16,5 +37,9 @@
     line-height: 100%;
     text-align: center;
     color: $c-main-dark;
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 24);
+    }
   }
 }

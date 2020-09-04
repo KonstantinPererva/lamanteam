@@ -60,11 +60,28 @@
     &-3 {
       //margin: sizeIns(-360, $valLeptop1) 0 0;
       @include heightIns(940, $valLeptop1);
+
+      @media ($mobile1) {
+        margin: sizeIns(-205, $valMobile4) 0 0;
+        height: auto;
+        padding: 0 0 sizeIns(34, $valMobile4);
+      }
     }
 
     &-4 {
       & .wr-section-title {
         margin: 0 0 sizeIns(115, $valLeptop1);
+      }
+
+      @media ($mobile1) {
+        padding: sizeIns(34, $valMobile4) 0 0;
+      }
+    }
+
+    &-5 {
+      @media ($mobile1) {
+        padding: sizeIns(42, $valMobile4) 0 0;
+        margin: sizeIns(36, $valMobile4) 0 0;
       }
     }
 
@@ -84,16 +101,31 @@
           width: 100%;
         }
       }
+
+      @media ($mobile1) {
+        @include heightIns(896, $valMobile4);
+        padding: sizeIns(64, $valMobile4) 0 0;
+      }
     }
 
     &-7 {
       @include heightIns(1056, $valLeptop1);
       padding: sizeIns(100, $valLeptop1) 0 sizeIns(53, $valLeptop1);
+
+      @media ($mobile1) {
+        height: auto;
+        padding: sizeIns(18, $valMobile4) 0 sizeIns(55, $valMobile4);
+      }
     }
 
     &-8 {
       @include heightIns(1230, $valLeptop1);
       padding: sizeIns(286, $valLeptop1) 0 sizeIns(50, $valLeptop1);
+
+      @media ($mobile1) {
+        height: auto;
+        padding: sizeIns(50, $valMobile4) 0 sizeIns(37, $valMobile4);
+      }
 
       & .banner {
         position: absolute;

@@ -3,21 +3,38 @@
   width: sizeIns(135, $valLeptop1);
   cursor: pointer;
 
+  @media ($mobile1) {
+    width: sizeIns(135, $valMobile4);
+    margin: 0 sizeIns(25, $valMobile4);
+  }
+
   &__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
     @include fzEl($fz, 24);
     line-height: 95%;
     color: #455052;
     @include heightIns(50, $valLeptop1);
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media ($mobile1) {
+      @include fzElMob($fz, 14);
+      @include heightIns(35, $valMobile4);
+    }
   }
 
   &.active &__title {
     @include fzEl($fz, 30);
     color: $c-main-dark;
+
+    @media ($mobile1) {
+      @include fzElMob($fz, 18);
+      @include heightIns(35, $valMobile4);
+      color: $c-main-light;
+    }
   }
 
   &:before {
@@ -29,6 +46,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;
+
+    @media ($mobile1) {
+      @include boxSizeIns(35, 35, $valMobile4);
+    }
   }
 
   &.active:before {

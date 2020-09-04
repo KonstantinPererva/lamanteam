@@ -2,6 +2,10 @@
   position: relative;
   padding: 0 sizeIns(78, $valLeptop1) 0 sizeIns(177, $valLeptop1);
 
+  @media ($mobile1) {
+    padding: 0 sizeIns(15, $valMobile4);
+  }
+
   & .object {
     position: absolute;
     left: 0;
@@ -9,6 +13,13 @@
     z-index: 0;
     width: sizeIns(283, $valLeptop1);
     height: sizeIns(624, $valLeptop1);
+
+    @media ($mobile1) {
+      width: sizeIns(283, $valMobile4);
+      height: sizeIns(624, $valMobile4);
+      left: sizeIns(-170, $valLeptop1);
+      top: sizeIns(301, $valMobile4);
+    }
 
     & img {
       width: 100%;

@@ -7,6 +7,13 @@
   color: $c-main-dark;
   margin: 0 0 marginIns(129, $valLeptop1);
 
+  @media ($mobile1) {
+    @include fzElMob ($fz, 64);
+    margin: 0 0 sizeIns(36, $valMobile4);
+    border: sizeIns(2, $valMobile4) solid currentColor;
+    padding: sizeIns(14, $valMobile4);
+  }
+
   & > span {
     display: block;
   }
@@ -15,5 +22,10 @@
     @include fzEl ($fz, 30);
     line-height: 100%;
     margin: marginIns(25, $valLeptop1) 0 0;
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 18);
+      margin: sizeIns(14, $valMobile4) 0 0;
+    }
   }
 }

@@ -1,4 +1,14 @@
 .worker-row {
   display: flex;
   margin: 0 0 sizeIns(153, $valLeptop1);
+
+  &.grid-2, &.grid-3 {
+    @media ($mobile1) {
+      display: block;
+
+      & > * {
+        width: 100%;
+      }
+    }
+  }
 }

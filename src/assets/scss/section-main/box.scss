@@ -1,0 +1,18 @@
+.box {
+  &-desktop {
+    display: block;
+
+    @media ($mobile1) {
+      display: none;
+
+    }
+  }
+
+  &-mobile {
+    display: none;
+
+    @media ($mobile1) {
+      display: block;
+    }
+  }
+}

@@ -159,9 +159,11 @@
             <div class="section-main section-3">
                 <div class="section-content">
                     <div class="section-content__left">
-                        <div class="section-img">
+                        <picture class="section-img">
+                            <source srcset="/assets/img/mob-banner-3.png" media="(max-width: 767px)">
+
                             <img src="/assets/img/banner-3.jpg" alt="banner" />
-                        </div>
+                        </picture>
                     </div>
 
                     <div class="section-content__right">
@@ -198,9 +200,11 @@
             </div>
 
             <div class="wr-section">
-                <div class="banner">
+                <picture class="banner">
+                    <source srcset="/assets/img/mob-bg_2.png" media="(max-width: 767px)">
+
                     <img src="/assets/img/bg_3.png" alt="banner" />
-                </div>
+                </picture>
 
                 <div class="section-main section-4">
                     <div class="page-content">
@@ -225,71 +229,219 @@
                         </div>
                     </div>
 
-                    <div class="section-content" data-content-tab="beginner">
-                        <div class="section-content__left">
-                            <div class="section-box">
-                                <div class="section-box-title">
-                                    <span>Beginner — <br />направление <br />для начинающих <br />пловцов!</span>
-                                </div>
-
-                                <div class="section-box-descr">
-                                    <p>Здесь те счастливчики, <br />
-                                        которым повезло <br />
-                                        попасть в команду.</p>
-                                </div>
-
-                                <div class="section-button">
-                                    <button class="button-main button-main_dark">Научится плавать</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-content__right">
-                            <div class="section-box">
-                                <div class="section-box-text">
-                                    <p>В этом направлении обучаются люди, которые находятся где-то между «не умею плавать вот совсем» и «без проблем проплываю 500 метров одним из спортивных стилей».</p>
-
-                                    <div class="section-box-list">
-                                        <div class="section-box-list__title">
-                                            <span>Каждая тренировка — это чистый кайф, потому что здесь вас ждет:</span>
-                                        </div>
-
-                                        <div class="section-box-list__item">
-                                            <span>• лучший вспомогательный инвентарь;</span>
-                                        </div>
-
-                                        <div class="section-box-list__item">
-                                            <span>• часть тренировок тренер проводит находясь в воде;</span>
-                                        </div>
-
-                                        <div class="section-box-list__item">
-                                            <span>• только интересные и эффективные упражнения;</span>
-                                        </div>
-
-                                        <div class="section-box-list__item">
-                                            <span>• невероятный уровень поддержки однокомандников и тренерского состава;</span>
-                                        </div>
-
-                                        <div class="section-box-list__item">
-                                            <span>• креативные и неожиданные методы мотивации.</span>
-                                        </div>
+                    <div class="wr-section-content active" data-content-tab="beginner">
+                        <div class="section-content">
+                            <div class="section-content__left">
+                                <div class="section-box">
+                                    <div class="section-box-title">
+                                        <span>Beginner — <br />направление <br />для начинающих <br />пловцов!</span>
                                     </div>
 
-                                    <p>В «beginner» можно плавать <span class="mark">от 1 тренировки до 3 месяцев!</span> После трех месяцев каждый гарантировано преодолевает рубеж в 500 м и затем выбирает специализацию:
-                                        <br />health или sport</p>
+                                    <div class="section-box-descr">
+                                        <p>Здесь те счастливчики, <br />
+                                            которым повезло <br />
+                                            попасть в команду.</p>
+                                    </div>
+
+                                    <div class="section-button box-desktop">
+                                        <button class="button-main button-main_dark">Научится плавать</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-content__right">
+                                <div class="section-box">
+                                    <div class="section-box-text">
+                                        <p>В этом направлении обучаются люди, которые находятся где-то между «не умею плавать вот совсем» и «без проблем проплываю 500 метров одним из спортивных стилей».</p>
+
+                                        <div class="section-box-list">
+                                            <div class="section-box-list__title">
+                                                <span>Каждая тренировка — это чистый кайф, потому что здесь вас ждет:</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• лучший вспомогательный инвентарь;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• часть тренировок тренер проводит находясь в воде;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• только интересные и эффективные упражнения;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• невероятный уровень поддержки однокомандников и тренерского состава;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• креативные и неожиданные методы мотивации.</span>
+                                            </div>
+                                        </div>
+
+                                        <p>В «beginner» можно плавать <span class="mark">от 1 тренировки до 3 месяцев!</span> После трех месяцев каждый гарантировано преодолевает рубеж в 500 м и затем выбирает специализацию:
+                                            <br />health или sport</p>
+                                    </div>
+                                </div>
+
+                                <div class="section-button box-mobile">
+                                    <button class="button-main button-main_blue">Научится плавать</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="section-content" data-content-tab="health">
+                    <div class="wr-section-content" data-content-tab="health">
+                        <div class="section-content">
+                            <div class="section-content__left">
+                                <div class="section-box">
+                                    <div class="section-box-title">
+                                        <span>Health — <br />направление <br />для людей, <br />которым некому <br />и нечего доказывать.</span>
+                                    </div>
+
+                                    <div class="section-box-descr">
+                                        <p>Плавай «для себя», <br />
+                                            плавай для удовольствия, <br />
+                                            плавай для здоровья.</p>
+                                    </div>
+
+                                    <div class="section-button box-desktop">
+                                        <button class="button-main button-main_dark">Быть здоровым</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-content__right">
+                                <div class="section-box">
+                                    <div class="section-box-text">
+                                        <p>В этом направлении занимаются люди, которым необходимы реабилитация после травм, исправление проблем с позвоночником, контроль веса с помощью плавания.</p>
+
+                                        <div class="section-box-list">
+                                            <div class="section-box-list__title">
+                                                <span>Реабилитация в бассейне максимально эффективна для таких ситуаций:</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• боли в спине и шее;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• травмы опорно-двигательного аппарата;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• переломы конечностей;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• остеохондроз;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• варикозное расширение вен;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• проблемы с артериальным давлением;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• болезни сердца и сосудов.</span>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            В воде на 95% исчезает компрессионная нагрузка на суставы и кости, поэтому восстановление происходит намного быстрее, чем на суше.
+                                        </p>
+
+                                        <p>
+                                            Плавание «для себя» — направление, где только ты ставишь цели перед собой.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="section-button box-mobile">
+                                    <button class="button-main button-main_blue">Быть здоровым</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="section-content" data-content-tab="sport">
+                    <div class="wr-section-content" data-content-tab="sport">
+                        <div class="section-content">
+                            <div class="section-content__left">
+                                <div class="section-box">
+                                    <div class="section-box-title">
+                                        <span>Sport — направление для тех, чья цель - соревнования, челленджи, пари и реализация любых идей, связанных с метрами, секундами или местами!</span>
+                                    </div>
+
+                                    <div class="section-button box-desktop">
+                                        <button class="button-main button-main_dark">Плавать быстро</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-content__right">
+                                <div class="section-box">
+                                    <div class="section-box-text">
+                                        <p>Здесь становятся быстрее, выше, сильнее, выносливее, а затем побеждают!</p>
+
+                                        <div class="section-box-list">
+                                            <div class="section-box-list__title">
+                                                <span>Все, что поможет стать быстрее без вреда для здоровья будет тут:</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• современные методики тренировки пловцов-любителей;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• тренировки на суше и в воде;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• использование подводной съемки;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• датчики пульса и качества гребков;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• современное оборудование и инвентарь;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• научный подход в каждом слове;</span>
+                                            </div>
+
+                                            <div class="section-box-list__item">
+                                                <span>• персональный план подготовки каждого ученика.</span>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            Скорость, километры, гордость в глазах близких, зависть в глазах соперников, победы над самим собой на каждой тренировке!
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="section-button box-mobile">
+                                    <button class="button-main button-main_blue">Плавать быстро</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="section-main section-5">
+                    <picture class="banner box-mobile">
+                        <source srcset="/assets/img/mob-bg_3.png" media="(max-width: 767px)">
+
+                        <img src="" alt="banner" />
+                    </picture>
+
                     <div class="page-content">
                         <div class="section-title">
                             <span>Работники</span>
@@ -382,13 +534,14 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="section-main section-6">
-                <div class="banner">
+                <picture class="banner">
+                    <source srcset="/assets/img/mob-bg_4.png" media="(max-width: 767px)">
+
                     <img src="/assets/img/bg_2.png" alt="banner" />
-                </div>
+                </picture>
 
                 <div class="page-content">
                     <div class="section-title">
@@ -485,11 +638,15 @@
                             <div class="cost-vip">
                                 <span class="cost-vip__price">20$</span>
 
-                                <span class="cost-vip__text">персональная тренировка</span>
+                                <span class="cost-vip__text">персональная <br />тренировка</span>
                             </div>
                         </div>
 
                         <div class="cost-box-col">
+                            <div class="cost-main-addition box-mobile">
+                                <span>* оплата в гривневом эквиваленте по текущему курсу доллара</span>
+                            </div>
+
                             <div class="cost-text">
                                 <p>Цена указана не за тренировки,
                                     а за членство в Lamanteam, которое
@@ -514,7 +671,7 @@
                     </div>
 
                     <div class="cost-bottom">
-                        <div class="cost-main-addition">
+                        <div class="cost-main-addition box-desktop">
                             <span>* оплата в гривневом эквиваленте по текущему курсу доллара</span>
                         </div>
 
@@ -526,9 +683,11 @@
             </div>
 
             <div class="section-main section-8">
-                <div class="banner">
+                <picture class="banner">
+                    <source srcset="/assets/img/mob-bg_5.png" media="(max-width: 767px)">
+
                     <img src="/assets/img/bg_4.png" alt="banner" />
-                </div>
+                </picture>
 
                 <div class="page-content">
                     <div class="section-title">
@@ -555,7 +714,7 @@
                                 </div>
 
                                 <div class="sponsor-card__descr">
-                                    <span>тренировочная база</span>
+                                    <span>тренировочная <br />база</span>
                                 </div>
                             </div>
 
@@ -575,7 +734,7 @@
                                 </div>
 
                                 <div class="sponsor-card__descr">
-                                    <span>информационный партнер</span>
+                                    <span>информационный <br />партнер</span>
                                 </div>
                             </div>
                         </div>
@@ -625,7 +784,36 @@
         </main>
     </div>
 
-<!--    <script src="./assets/libs/swiper/swiper.min.js"></script>-->
-<!--    <script src="./assets/libs/parallax/simpleParallax.js"></script>-->
+    <div class="popup open" data-popup="registration" >
+        <div class="popup__inner">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="popup-title">
+                        <span>Запись на тренировку</span>
+                    </div>
+                </div>
+
+                <div class="popup-body">
+                    <form action="!" class="form-main">
+                        <div class="form-main-row">
+                            <input type="text" class="form-main-input" placeholder="Твое Имя">
+                        </div>
+
+                        <div class="form-main-row">
+                            <input type="text" class="form-main-input" placeholder="Номер телефона">
+                        </div>
+
+                        <div class="form-main-button">
+                            <button type="submit" class="button-main button-main_big">
+                                <span>Отправить заявку</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <span class="popup-substrate" data-close-popup=""></span>
+        </div>
+    </div>
 </body>
 </html>

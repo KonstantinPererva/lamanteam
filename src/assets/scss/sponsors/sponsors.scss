@@ -1,13 +1,20 @@
 .sponsors {
-
   &__button {
     text-align: center;
     margin: 0 0 sizeIns(83, $valLeptop1);
+
+    @media ($mobile1) {
+      margin: 0 0 sizeIns(36, $valMobile4);
+    }
   }
 
   &__contacts {
     text-align: center;
     margin: 0 0 sizeIns(83, $valLeptop1);
+
+    @media ($mobile1) {
+      margin: 0;
+    }
     
     & .wr-contacts-info {
       display: inline-block;

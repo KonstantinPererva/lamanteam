@@ -15,10 +15,18 @@
   .section-3 & {
     color: $c-main-dark;
     margin: 0 0 marginIns(150, $valLeptop1);
+
+    @media ($mobile1) {
+      margin: 0 0 marginIns(60, $valMobile4);
+    }
   }
 
   .section-4 & {
     color: $c-main-dark;
     margin: 0 0 marginIns(101, $valLeptop1);
+
+    @media ($mobile1) {
+      color: $c-main-light;
+    }
   }
 }

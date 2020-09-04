@@ -23,5 +23,10 @@
   .section-3 & {
     @include boxSizeIns(1300, 1300, $valLeptop1);
     margin: sizeIns(-360, $valLeptop1) 0 0 marginIns(-383, $valLeptop1);
+
+    @media ($mobile1) {
+      @include boxSizeIns(360, 395, $valMobile4);
+      margin: 0 0 marginIns(50, $valMobile4);
+    }
   }
 }

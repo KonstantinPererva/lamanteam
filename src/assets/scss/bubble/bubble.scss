@@ -24,12 +24,20 @@
       top: marginIns(-230, $valLeptop1);
       right: 0;
       @include boxSizeIns(186, 330, $valLeptop1);
+
+      @media ($mobile1) {
+        display: none;
+      }
     }
 
     &_big {
       top: marginIns(435, $valLeptop1);
       right: marginIns(189, $valLeptop1);
       @include boxSizeIns(500, 500, $valLeptop1);
+
+      @media ($mobile1) {
+        display: none;
+      }
     }
   }
 }

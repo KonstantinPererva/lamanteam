@@ -3,4 +3,14 @@
   height: sizeIns(635, $valLeptop1);
   border-radius: 100%;
   overflow: hidden;
+
+  @media ($mobile1) {
+    width: sizeIns(445, $valMobile4);
+    height: sizeIns(445, $valMobile4);
+    margin: 0 0 0 sizeIns(-65, $valMobile4);
+  }
+
+  & img {
+    width: 100%;
+  }
 }

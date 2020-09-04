@@ -3,6 +3,11 @@
   align-items: center;
   flex-shrink: 0;
 
+  @media ($mobile1) {
+    display: block;
+    margin: 0 auto sizeIns(57, $valMobile4);
+  }
+
   &__img {
     flex-shrink: 0;
     width: sizeIns(330, $valLeptop1);
@@ -11,6 +16,16 @@
     border: sizeIns(7, $valLeptop1) solid #12295F;
     margin: 0 sizeIns(43, $valLeptop1) 0 0;
     overflow: hidden;
+
+    @media ($mobile1) {
+      width: sizeIns(200, $valMobile4);
+      height: sizeIns(200, $valMobile4);
+      margin: 0 auto sizeIns(41, $valMobile4);
+    }
+
+    & img {
+      width: 100%;
+    }
   }
 
   &__name {
@@ -21,6 +36,12 @@
     line-height: 95%;
     color: $c-main-dark;
     margin: 0 0 sizeIns(27, $valLeptop1);
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 36);
+      margin: 0 0 sizeIns(14, $valMobile4);
+      text-align: center;
+    }
   }
 
   &__text {
@@ -30,20 +51,48 @@
     @include fzEl ($fz, 36);
     line-height: 95%;
     color: $c-main-dark;
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 18);
+      text-align: center;
+    }
+  }
+
+  &_sm {
+    @media ($mobile1) {
+      margin: 0 auto sizeIns(40, $valMobile4);
+    }
   }
 
   &_sm &__img {
     width: sizeIns(200, $valLeptop1);
     height: sizeIns(200, $valLeptop1);
     margin: 0 sizeIns(40, $valLeptop1) 0 0;
+
+    @media ($mobile1) {
+      width: sizeIns(170, $valMobile4);
+      height: sizeIns(170, $valMobile4);
+      margin: 0 auto sizeIns(27, $valMobile4);
+    }
   }
 
   &_sm &__name {
     @include fzEl ($fz, 36);
     margin: 0 0 sizeIns(25, $valLeptop1);
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 30);
+      margin: 0 0 sizeIns(14, $valMobile4);
+      text-align: center;
+    }
   }
 
   &_sm &__text {
     @include fzEl ($fz, 24);
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 18);
+      text-align: center;
+    }
   }
 }

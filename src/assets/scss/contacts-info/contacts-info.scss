@@ -5,10 +5,18 @@
   & .phone {
     display: flex;
     align-items: center;
-    margin: 0 marginIns(60, $valLeptop1) 0 0;
+    margin: 0 marginIns(17, $valLeptop1) 0 0;
+
+    .header & {
+      margin: 0 marginIns(60, $valLeptop1) 0 0;
+    }
 
     @media ($mobile1) {
-      margin: 0 marginIns(60, $valMobile4) 0 0;
+      .header & {
+        margin: 0 marginIns(60, $valMobile4) 0 0;
+      }
+
+      margin: 0 marginIns(17, $valMobile4) 0 0;
     }
 
     &__ico {
@@ -29,7 +37,9 @@
 
         & path {
           @media ($mobile1) {
-            fill: $c-main-light;
+            .header & {
+              fill: $c-main-light;
+            }
           }
         }
       }
@@ -44,14 +54,18 @@
 
       @media ($mobile1) {
         @include fzElMob ($fz, 12);
-        color: $c-main-light;
+        .header & {
+          color: $c-main-light;
+        }
       }
 
       & a {
         color: $c-main-dark;
 
         @media ($mobile1) {
-          color: $c-main-light;
+          .header & {
+            color: $c-main-light;
+          }
         }
 
         &:hover {
@@ -59,7 +73,9 @@
           color: $c-main-dark;
 
           @media ($mobile1) {
-            color: $c-main-light;
+            .header & {
+              color: $c-main-light;
+            }
           }
         }
       }

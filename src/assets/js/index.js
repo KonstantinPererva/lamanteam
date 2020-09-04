@@ -56,3 +56,143 @@ var Animate = /*#__PURE__*/function () {
 
     return Animate;
 }();
+
+function Tab(node, changeBg) {
+    var self = this;
+    self.changeBg = changeBg || null;
+
+    if (!node) {return}
+    self.node = document.querySelector(node) || null;
+
+    if (self.node.querySelectorAll('[data-button-tab]').length) {
+        self.btnSwitchList = [].slice.call(self.node.querySelectorAll('[data-button-tab]'));
+        self.tab = [].slice.call(self.node.querySelectorAll('[data-content-tab]'));
+
+        self.btnSwitchList.forEach(function (btn, ind) {
+            btn.addEventListener('click', function () {
+
+                if (ind === 1) {
+                    this.parentElement.classList.add('right');
+                    this.parentElement.classList.remove('disabled');
+
+                    if (self.changeBg) {
+                        self.node.classList.add('change');
+                    }
+                } else if (ind === 2) {
+                    this.parentElement.classList.add('disabled');
+                } else {
+                    this.parentElement.classList.remove('right');
+                    this.parentElement.classList.remove('disabled');
+
+                    if (self.changeBg) {
+                        self.node.classList.remove('change');
+                    }
+                }
+
+                var name = this.dataset.buttonTab;
+
+                self.tab.forEach(function (tab) {
+                    tab.classList.remove('active');
+                });
+
+                self.btnSwitchList.forEach(function (btn) {
+                    btn.classList.remove('active');
+                });
+
+                self.node.querySelector('[data-content-tab="' + name + '"]').classList.add('active');
+                this.classList.add('active');
+            });
+        })
+    }
+}
+
+function PagePopup(popup) {
+    var _s = this;
+    _s.popup = document.querySelector('[data-popup="' + popup + '"]');
+    _s.btnClose = _s.popup.querySelectorAll('[data-close-popup]');
+    _s.listPopup = document.querySelectorAll('[data-popup]');
+    _s.transition = 300;
+
+    _s.change = function() {
+        for (var i = 0; i < _s.listPopup.length; i++) {
+            if (_s.listPopup[i].classList.contains('open')) {
+                _s.close(_s.listPopup[i]);
+
+                setTimeout(_s.open, _s.transition);
+            } else {
+                _s.open();
+            }
+        }
+    }
+
+    _s.open = function () {
+        _s.popup.style.display = 'block';
+
+        setTimeout(function () {
+            _s.popup.classList.add('open');
+        },0)
+    }
+
+    _s.close = function (popup) {
+        popup.classList.remove('open');
+
+        setTimeout(function () {
+            popup.style.display = 'none';
+        },_s.transition);
+    }
+
+    _s.closeCurrentPopup = function () {
+        _s.popup.classList.remove('open');
+
+        setTimeout(function () {
+            _s.popup.style.display = 'none';
+        },_s.transition);
+    }
+
+    _s.init = function () {
+        for (var i = 0; i < _s.btnClose.length; i++ ) {
+            _s.btnClose[i].addEventListener('click', function () {
+                _s.close(_s.popup);
+            })
+        }
+    }
+
+    return {
+        change: _s.change,
+        open: _s.open,
+        init: _s.init,
+        close: _s.closeCurrentPopup
+    }
+}
+
+function openPopup(popup) {
+    var p = new PagePopup(popup);
+    p.change();
+}
+
+function closePopup(popup) {
+    var p = new PagePopup(popup);
+    p.close();
+}
+
+if (document.querySelectorAll('.section-4').length) {
+    new Tab('.section-4');
+}
+
+if (document.querySelectorAll('[data-popup]').length) {
+    var listBtnOpenPopup = document.querySelectorAll('[data-open-popup]');
+
+    for (let i = 0; i < listBtnOpenPopup.length; i++) {
+        let popup = listBtnOpenPopup[i].dataset.openPopup;
+
+        listBtnOpenPopup[i].popup = new PagePopup(popup);
+
+        listBtnOpenPopup[i].popup.init();
+    }
+
+    for (var i = 0; i < listBtnOpenPopup.length; i++) {
+        listBtnOpenPopup[i].addEventListener('click', function () {
+            this.popup.change();
+        })
+    }
+}

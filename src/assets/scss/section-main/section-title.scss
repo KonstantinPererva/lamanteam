@@ -21,30 +21,55 @@
   .section-3 & {
     color: $c-main-dark;
     margin: 0 0 sizeIns(113, $valLeptop1);
+
+    @media ($mobile1) {
+      margin: 0 0 sizeIns(56, $valMobile4);
+    }
   }
 
   .section-4 & {
     color: $c-main-dark;
+
+    @media ($mobile1) {
+      color: $c-main-light;
+      margin: 0 0 sizeIns(29, $valMobile4);
+    }
   }
 
   .section-5 & {
     color: $c-main-dark;
     margin: sizeIns(253, $valLeptop1) 0 sizeIns(112, $valLeptop1);
+
+    @media ($mobile1) {
+      margin: 0 0 sizeIns(56, $valMobile4);
+    }
   }
 
   .section-6 & {
     color: $c-main-light;
     margin: 0 0 sizeIns(122, $valLeptop1);
+
+    @media ($mobile1) {
+      margin: 0 0 sizeIns(84, $valMobile4);
+    }
   }
 
   .section-7 & {
     color: $c-main-dark;
     margin: 0 0 sizeIns(52, $valLeptop1);
+
+    @media ($mobile1) {
+      margin: 0 0 sizeIns(51, $valMobile4);
+    }
   }
 
   .section-8 & {
     color: $c-main-dark;
     margin: 0 0 sizeIns(211, $valLeptop1);
+
+    @media ($mobile1) {
+      margin: 0 0 sizeIns(80, $valMobile4);
+    }
   }
 }
 

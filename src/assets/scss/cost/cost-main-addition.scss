@@ -6,4 +6,8 @@
   line-height: 100%;
   color: $c-main-dark;
   margin: 0 sizeIns(200, $valLeptop1) 0 0;
+
+  @media ($mobile1) {
+    @include fzElMob ($fz, 14);
+  }
 }

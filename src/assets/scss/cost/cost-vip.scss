@@ -5,14 +5,27 @@
   color: $c-main-dark;
   display: flex;
 
+  @media ($mobile1) {
+    margin: 0 0 sizeIns(23, $valMobile4);
+  }
+
   &__price {
     @include fzEl ($fz, 64);
     line-height: 95%;
-    margin: 0 marginIns(26, $valLeptop1) 0 0;
+    margin: 0 sizeIns(26, $valLeptop1) 0 0;
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 48);
+      margin: 0 sizeIns(13, $valMobile4) 0 0;
+    }
   }
 
   &__text {
     @include fzEl ($fz, 30);
     line-height: 100%;
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 18);
+    }
   }
 }

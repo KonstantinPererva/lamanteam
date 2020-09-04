@@ -3,6 +3,8 @@
   z-index: 1;
   display: flex;
 
+  min-height: sizeIns(500, $valLeptop1);
+
   @media ($mobile1) {
     display: block;
   }
@@ -35,7 +37,7 @@
     }
 
     &__right {
-      padding: 0 sizeIns(50, $valLeptop1) 0 0;
+      padding: 0 sizeIns(15, $valMobile4);
     }
   }
 
@@ -45,10 +47,30 @@
       margin: 0 sizeIns(55, $valLeptop1) 0 0;
       width: sizeIns(917, $valLeptop1);
       flex-shrink: 0;
+
+      @media ($mobile1) {
+        padding: 0 sizeIns(15, $valMobile4);
+        margin: 0;
+        width: 100%;
+      }
     }
 
     &__right {
       padding: 0 sizeIns(235, $valLeptop1) 0 0;
+
+      @media ($mobile1) {
+        padding: 0 sizeIns(15, $valMobile4);
+      }
+    }
+  }
+}
+
+.wr-section-content {
+  &[data-content-tab] {
+    display: none;
+
+    &.active {
+      display: block;
     }
   }
 }

@@ -1,3 +1,6 @@
 .section-button {
-  text-align: center;
+
+  @media ($mobile1) {
+    text-align: center;
+  }
 }

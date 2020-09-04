@@ -10,6 +10,11 @@
     text-align: center;
     color: $c-main-light;
     margin: 0 0 sizeIns(29, $valLeptop1);
+
+    @media ($mobile1) {
+      @include fzElMob ($fz, 36);
+      margin: 0 0 marginIns(26, $valMobile4);
+    }
   }
 
   &__body {

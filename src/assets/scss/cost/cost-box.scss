@@ -2,4 +2,8 @@
   display: flex;
   position: relative;
   z-index: 1;
+
+  @media ($mobile1) {
+    flex-direction: column;
+  }
 }

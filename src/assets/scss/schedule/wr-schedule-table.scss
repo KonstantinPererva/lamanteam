@@ -1,4 +1,8 @@
 .wr-schedule-table {
   display: flex;
   margin: 0 0 sizeIns(90, $valLeptop1);
+
+  @media ($mobile1) {
+    margin: 0 0 sizeIns(55, $valMobile4);
+  }
 }

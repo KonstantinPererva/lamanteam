@@ -29,6 +29,11 @@
       line-height: 107%;
       letter-spacing: -0.02em;
       font-family: $f-o;
+
+      @media ($mobile1) {
+        @include fzElMob ($fz, 14);
+        margin: 0 0 marginIns(14, $valMobile4);
+      }
     }
 
     .section-4 & {
@@ -36,6 +41,12 @@
       color: $c-main-dark;
       margin: 0 0 marginIns(157, $valLeptop1);
       font-weight: bold;
+
+      @media ($mobile1) {
+        @include fzElMob ($fz, 24);
+        margin: 0 0 marginIns(17, $valMobile4);
+        color: $c-main-light;
+      }
     }
   }
 }

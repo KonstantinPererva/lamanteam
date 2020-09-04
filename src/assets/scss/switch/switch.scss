@@ -8,4 +8,10 @@
   right: 0;
   bottom: 0;
   margin: auto;
+
+  @media ($mobile1) {
+    color: $c-main-light;
+    position: relative;
+    @include widthSizeIns(330, $valMobile4);
+  }
 }

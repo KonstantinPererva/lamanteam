@@ -15,11 +15,17 @@
         z-index: 0;
 
         @media ($mobile1) {
-          top: sizeIns(53, $valMobile4);
+          top: sizeIns(50, $valMobile4);
         }
 
         & img {
-          width: 100%;
+          //width: 100%;
+          height: 100%;
+
+          @media ($mobile1) {
+            width: 100%;
+            height: auto;
+          }
         }
       }
 

@@ -51,6 +51,7 @@
       line-height: 115%;
       @include fzEl ($fz, 24);
       color: $c-main-dark;
+      white-space: nowrap;
 
       @media ($mobile1) {
         @include fzElMob ($fz, 12);

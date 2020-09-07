@@ -1,4 +1,10 @@
 .section-main-box {
   position: relative;
   z-index: 1;
+
+  &__button {
+    @media ($mobile1) {
+      text-align: center;
+    }
+  }
 }

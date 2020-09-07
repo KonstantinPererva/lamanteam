@@ -3,7 +3,8 @@
 //@import "utils/fonts";
 @import "utils/base";
 
-//@import "../css/style.scss";
+
+@import "../css/animate.min.css";
 @import "button/style.scss";
 @import "header/style.scss";
 @import "contacts-info/style.scss";
@@ -19,3 +20,4 @@
 @import "cost/style.scss";
 @import "sponsors/style.scss";
 @import "popup/style.scss";
+@import "animation/style.scss";

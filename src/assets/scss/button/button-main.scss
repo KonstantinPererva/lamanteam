@@ -21,39 +21,64 @@
     color: #fff;
     background: $c-main-dark;
     border-color: $c-main-dark;
+
+    &:hover, &:focus, &:active {
+      color: #12295F;
+      background: #77a2d9;
+      border-color: #12295F;
+      border-width: 1px;
+    }
+  }
+
+  &_t-l {
+    color: $c-text-light;
+    background: $c-main-dark;
+    border-color: $c-main-dark;
+
+    &:hover, &:focus, &:active {
+      color: #12295F;
+      background: #77a2d9;
+      border-color: #12295F;
+      border-width: 1px;
+    }
   }
 
   &_blue {
     color: $c-main-dark;
     background: $c-main;
     border-color: $c-main;
+
+    &:hover, &:focus, &:active {
+      color: #12295F;
+      background: #77a2d9;
+      border-color: $c-main;
+      border-width: 1px;
+    }
   }
 
   &_white {
     color: #fff;
     background: $c-main;
     border-color: $c-main;
+
+    &:hover, &:focus, &:active {
+      color: #12295F;
+      background: #77a2d9;
+      border-color: #12295F;
+      border-width: 1px;
+    }
   }
 
   &_transparent {
     color: $c-main;
     background: transparent;
     border-color: $c-main;
-  }
 
-  &_small {
-    min-width: 210px;
-    text-transform: none;
-  }
-
-  &:hover, &:focus, &:active {
-    color: #fff;
-    background: #333;
-    border-color: #333;
-    border-width: 1px;
-
-    & svg path {
-      fill: #fff;
+    &:hover, &:focus, &:active {
+      color: #12295F;
+      background: #77a2d9;
+      border-color: #12295F;
+      border-width: 1px;
     }
   }
 }

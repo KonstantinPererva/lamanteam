@@ -19,10 +19,6 @@
   }
 }
 
-.popup-header {
-  padding: 0 30px
-}
-
 .popup-title {
   font-family: $f-p;
   font-style: normal;
@@ -31,16 +27,12 @@
   line-height: 95%;
   text-align: center;
   color: $c-main-dark;
-  margin: 0 0 32px
-}
+  margin: 0 0 sizeIns(79, $valLeptop1);
 
-.popup-body {
-  padding: 0 30px
-}
-
-.popup-footer {
-  padding: 0 30px;
-  margin: 19px 0 0
+  @media ($tablet3) {
+    font-size: 24px;
+    margin: 0 0 30px;
+  }
 }
 
 .popup-substrate {
@@ -63,47 +55,29 @@
   opacity: 1
 }
 
-.popup-subtitle {
-  max-width: 302px;
-  width: 100%;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 13px;
-  text-align: center;
-  color: #333;
-  margin: 0 auto 35px
-}
-
-.popup-content .popup-subtitle {
-  max-width: 400px
-}
-
-.popup-text-small {
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 10px;
-  text-align: center;
-  color: #333
-}
-
 .popup-content {
   position: relative;
   z-index: 1;
-  max-width: 700px;
+  max-width: sizeIns(700, $valLeptop1);
   width: 100%;
-  height: 550px;
   background: #82D2F3;
   -webkit-box-shadow: 2px 4px 10px rgba(0,0,0,0.25);
   box-shadow: 2px 4px 10px rgba(0,0,0,0.25);
-  border-radius: 5px;
-  padding: 30px 0;
+  border-radius: sizeIns(15, $valLeptop1);
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
-  opacity: 0
+  opacity: 0;
+  padding: sizeIns(67, $valLeptop1);
+
+  @media ($tablet3) {
+    max-width: 340px;
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
 }
 
 .popup.open .popup-content {
@@ -113,94 +87,89 @@
   opacity: 1
 }
 
-.popup-button {
-  text-align: center;
-  margin: 26px 0 14px
-}
-
-.popup-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px 0;
-  margin: 0 0 32px
-}
-
-.form-main-bottom {
-  margin: 20px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center
-}
-
-.form-main-bottom .button-link {
-  margin: 0 0 0 7px
-}
-
-.form-main {
-  max-width: 360px;
-  width: 100%;
-  margin: 0 auto
-}
-
 .form-main-input {
   display: block;
-  height: 38px;
+  height: sizeIns(70, $valLeptop1);
   width: 100%;
   background: #FFFFFF;
-  border: 1px solid #B8C5D0;
-  -webkit-box-shadow: 0 4px 10px #EEF2F5;
-  box-shadow: 0 4px 10px #EEF2F5;
-  border-radius: 5px;
-  font-size: 14px;
-  line-height: 36px;
+  border: 0;
+  border-radius: sizeIns(40, $valLeptop1);
+  font-size: sizeIns(28, $valLeptop1);
   color: #333;
-  padding: 0 15px;
-  -webkit-appearance: none
+  padding: 0 sizeIns(27, $valLeptop1);
+  -webkit-appearance: none;
+
+  @media ($tablet3) {
+    font-size: 18px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 20px;
+  }
+
+  &:focus, &:active, &:hover {
+    outline: none;
+    border: 0;
+  }
 }
 
 .form-main-input::-webkit-input-placeholder {
-  font-size: 14px;
-  line-height: 36px;
-  color: #B8C5D0
+  font-size: sizeIns(28, $valLeptop1);
+  color: #C4C4C4;
+
+  @media ($tablet3) {
+    font-size: 18px;
+  }
 }
 
 .form-main-input:-moz-placeholder {
-  font-size: 14px;
-  line-height: 36px;
-  color: #B8C5D0
+  font-size: sizeIns(28, $valLeptop1);
+  color: #C4C4C4;
+
+  @media ($tablet3) {
+    font-size: 18px;
+  }
 }
 
 .form-main-input::-moz-placeholder {
-  font-size: 14px;
-  line-height: 36px;
-  color: #B8C5D0
+  font-size: sizeIns(28, $valLeptop1);
+  color: #C4C4C4;
+
+  @media ($tablet3) {
+    font-size: 18px;
+  }
 }
 
 .form-main-input:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 36px;
-  color: #B8C5D0
+  font-size: sizeIns(28, $valLeptop1);
+  color: #C4C4C4;
+
+  @media ($tablet3) {
+    font-size: 18px;
+  }
 }
 
-.form-main-row {
-  width: 100%
-}
+.form-main-row + .form-main-row {
+  margin: sizeIns(25, $valLeptop1) 0 0;
 
-.form-main-row+.form-main-row {
-  margin: 7px 0 0
+  @media ($tablet3) {
+    margin: 14px 0 0;
+  }
 }
 
 .form-main-button {
-  margin: 22px 0 0;
-  text-align: center
+  margin: sizeIns(59, $valLeptop1) 0 0;
+  text-align: center;
+
+  @media ($tablet3) {
+    margin: 30px 0 0;
+
+    button {
+      font-size: 18px;
+      width: 100%;
+      min-width: auto;
+      height: 50px;
+      padding: 0 20px;
+      border-radius: 25px;
+    }
+  }
 }

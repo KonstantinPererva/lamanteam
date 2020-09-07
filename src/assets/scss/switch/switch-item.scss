@@ -1,11 +1,12 @@
 .switch-item {
+  flex-shrink: 0;
   margin: 0 sizeIns(25, $valLeptop1);
   width: sizeIns(135, $valLeptop1);
   cursor: pointer;
 
   @media ($mobile1) {
-    width: sizeIns(135, $valMobile4);
-    margin: 0 sizeIns(25, $valMobile4);
+    width: sizeIns(80, $valMobile4);
+    margin: 0 sizeIns(15, $valMobile4);
   }
 
   &__title {

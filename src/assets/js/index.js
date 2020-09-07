@@ -112,5 +112,10 @@ window.addEventListener('load', function () {
     }
 
     $("input[name=phone]").mask("+38 (099) 999-99-99");
+
+    setTimeout(function () {
+        document.body.style.opacity = '1';
+        document.body.style.transition = '0';
+    },100)
 })
 

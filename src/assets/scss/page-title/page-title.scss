@@ -3,12 +3,21 @@
   font-weight: bold;
   font-family: $f-p;
   @include fzEl ($fz, 64);
-  margin: 0 0 marginIns(99, $valLeptop1);
+  margin: 0 0 marginIns(50, $valLeptop1);
   line-height: 95%;
   color: $c-main-dark;
 
   @media ($mobile1) {
     @include fzElMob ($fz, 24);
     margin: 0 0 marginIns(17, $valMobile4);
+  }
+
+  & span {
+    display: block;
+
+    & + span {
+      display: block;
+      margin: marginIns(30, $valLeptop1) 0 0;
+    }
   }
 }

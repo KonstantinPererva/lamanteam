@@ -48,6 +48,9 @@ function PagePopup(popup) {
 
     _s.open = function () {
         _s.popup.style.display = 'block';
+        console.log(window.innerWidth - document.body.clientWidth);
+        document.documentElement.style.width = document.body.clientWidth + 'px';
+        document.documentElement.style.overflow = 'hidden';
 
         setTimeout(function () {
             _s.popup.classList.add('open');
@@ -59,6 +62,9 @@ function PagePopup(popup) {
 
         setTimeout(function () {
             _s.popup.style.display = 'none';
+
+            document.documentElement.style.width = 'auto';
+            document.documentElement.style.overflow = 'visible';
         },_s.transition);
     }
 

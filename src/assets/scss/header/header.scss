@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: 1;
-  margin: 0 0 marginIns(131, $valLeptop1);
+  margin: 0 0 marginIns(60, $valLeptop1);
 
   @media ($mobile1) {
     margin: 0 0 marginIns(369, $valMobile4);

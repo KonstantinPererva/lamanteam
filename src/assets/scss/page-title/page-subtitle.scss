@@ -4,7 +4,7 @@
   @include fzEl ($fz, 36);
   line-height: 115%;
   color: $c-main-dark;
-  margin: 0 0 marginIns(131, $valLeptop1);
+  margin: 0 0 marginIns(60, $valLeptop1);
 
   @media ($mobile1) {
     @include fzElMob ($fz, 12);

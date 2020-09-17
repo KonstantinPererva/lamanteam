@@ -6,7 +6,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: sizeIns(-8, $valLeptop1);
   margin: auto;
 
   @media ($mobile1) {

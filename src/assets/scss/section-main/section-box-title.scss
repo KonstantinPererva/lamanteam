@@ -14,7 +14,7 @@
 
   .section-3 & {
     color: $c-main-dark;
-    margin: 0 0 marginIns(150, $valLeptop1);
+    margin: 0 0 marginIns(80, $valLeptop1);
 
     @media ($mobile1) {
       margin: 0 0 marginIns(60, $valMobile4);

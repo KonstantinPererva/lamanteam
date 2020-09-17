@@ -65,7 +65,8 @@
 
     &-3 {
       //margin: sizeIns(-360, $valLeptop1) 0 0;
-      @include heightIns(940, $valLeptop1);
+      //@include heightIns(940, $valLeptop1);
+      padding: 0 0 sizeIns(60, $valLeptop1);
 
       @media ($mobile1) {
         margin: sizeIns(-205, $valMobile4) 0 0;

@@ -25,7 +25,7 @@
     .section-3 & {
       color: $c-main-dark;
       font-weight: bold;
-      @include fzEl ($fz, 36);
+      @include fzEl ($fz, 24);
       line-height: 107%;
       letter-spacing: -0.02em;
       font-family: $f-o;

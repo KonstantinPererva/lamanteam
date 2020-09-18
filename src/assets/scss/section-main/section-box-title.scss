@@ -23,7 +23,7 @@
 
   .section-4 & {
     color: $c-main-dark;
-    margin: 0 0 marginIns(101, $valLeptop1);
+    margin: 0 0 marginIns(80, $valLeptop1);
 
     @media ($mobile1) {
       color: $c-main-light;

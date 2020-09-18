@@ -10,7 +10,7 @@
 
   &-3 {
     & > * {
-      @include grid (3, sizeIns(100, $valLeptop1), 0px);
+      @include grid (3, sizeIns(40, $valLeptop1), 0px);
     }
   }
 

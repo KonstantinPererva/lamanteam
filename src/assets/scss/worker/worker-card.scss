@@ -10,11 +10,11 @@
 
   &__img {
     flex-shrink: 0;
-    width: sizeIns(330, $valLeptop1);
-    height: sizeIns(330, $valLeptop1);
+    width: sizeIns(200, $valLeptop1);
+    height: sizeIns(200, $valLeptop1);
     border-radius: 100%;
     border: sizeIns(7, $valLeptop1) solid #12295F;
-    margin: 0 sizeIns(43, $valLeptop1) 0 0;
+    margin: 0 sizeIns(30, $valLeptop1) 0 0;
     overflow: hidden;
 
     @media ($mobile1) {
@@ -32,7 +32,7 @@
     font-family: $f-p;
     font-style: normal;
     font-weight: bold;
-    @include fzEl ($fz, 64);
+    @include fzEl ($fz, 36);
     line-height: 95%;
     color: $c-main-dark;
     margin: 0 0 sizeIns(27, $valLeptop1);
@@ -48,7 +48,7 @@
     font-family: $f-p;
     font-style: normal;
     font-weight: bold;
-    @include fzEl ($fz, 36);
+    @include fzEl ($fz, 26);
     line-height: 95%;
     color: $c-main-dark;
 
@@ -58,6 +58,13 @@
     }
   }
 
+  &__list {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: none;
+  }
+
   &_sm {
     @media ($mobile1) {
       margin: 0 auto sizeIns(40, $valMobile4);
@@ -65,9 +72,10 @@
   }
 
   &_sm &__img {
-    width: sizeIns(200, $valLeptop1);
-    height: sizeIns(200, $valLeptop1);
-    margin: 0 sizeIns(40, $valLeptop1) 0 0;
+    width: sizeIns(150, $valLeptop1);
+    height: sizeIns(150, $valLeptop1);
+    margin: 0 sizeIns(30, $valLeptop1) 0 sizeIns(20, $valLeptop1);
+    border: sizeIns(4, $valLeptop1) solid #12295F;
 
     @media ($mobile1) {
       width: sizeIns(170, $valMobile4);
@@ -77,7 +85,7 @@
   }
 
   &_sm &__name {
-    @include fzEl ($fz, 36);
+    @include fzEl ($fz, 30);
     margin: 0 0 sizeIns(25, $valLeptop1);
 
     @media ($mobile1) {
@@ -88,7 +96,7 @@
   }
 
   &_sm &__text {
-    @include fzEl ($fz, 24);
+    @include fzEl ($fz, 22);
 
     @media ($mobile1) {
       @include fzElMob ($fz, 18);

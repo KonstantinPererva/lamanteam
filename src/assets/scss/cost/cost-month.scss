@@ -2,9 +2,9 @@
   font-family: $f-p;
   font-style: normal;
   font-weight: bold;
-  @include fzEl ($fz, 64);
+  @include fzEl ($fz, 74);
   line-height: 95%;
-  color: $c-main-dark;
+  color: #00a2e4;
   margin: 0 0 marginIns(53, $valLeptop1);
 
   @media ($mobile1) {

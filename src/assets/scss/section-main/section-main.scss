@@ -116,7 +116,7 @@
     }
 
     &-7 {
-      @include heightIns(1056, $valLeptop1);
+      //@include heightIns(1056, $valLeptop1);
       padding: sizeIns(100, $valLeptop1) 0 sizeIns(53, $valLeptop1);
 
       @media ($mobile1) {

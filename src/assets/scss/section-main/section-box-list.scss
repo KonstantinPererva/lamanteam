@@ -2,7 +2,7 @@
   margin: sizeIns(40, $valLeptop1) 0;
 
   .section-4 & {
-    margin: sizeIns(40, $valLeptop1) 0 sizeIns(40, $valLeptop1);
+    margin: sizeIns(60, $valLeptop1) 0 sizeIns(60, $valLeptop1);
 
     @media ($mobile1) {
       margin: sizeIns(60, $valMobile4) 0 sizeIns(25, $valMobile4);
@@ -14,7 +14,7 @@
   }
 
   &__item {
-    margin: sizeIns(15, $valLeptop1) 0;
+    margin: sizeIns(25, $valLeptop1) 0;
 
     &:last-child {
       margin-bottom: 0;

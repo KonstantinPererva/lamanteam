@@ -69,13 +69,15 @@
       padding: 0 0 sizeIns(60, $valLeptop1);
 
       @media ($mobile1) {
-        margin: sizeIns(-205, $valMobile4) 0 0;
+        margin: sizeIns(-40, $valMobile4) 0 0;
         height: auto;
         padding: 0 0 sizeIns(34, $valMobile4);
       }
     }
 
     &-4 {
+      margin: 0 0 sizeIns(250, $valLeptop1);
+
       & .wr-section-title {
         margin: 0 0 sizeIns(80, $valLeptop1);
       }
@@ -87,8 +89,10 @@
 
     &-5 {
       @media ($mobile1) {
-        padding: sizeIns(42, $valMobile4) 0 0;
-        margin: sizeIns(36, $valMobile4) 0 0;
+        padding: sizeIns(42, $valMobile4) sizeIns(30, $valMobile4) sizeIns(120, $valMobile4);
+        margin: sizeIns(36, $valMobile4) sizeIns(-30, $valMobile4) 0;
+        background: $c-main-light;
+        border-radius: 50%/30px;
       }
     }
 
@@ -112,6 +116,7 @@
       @media ($mobile1) {
         @include heightIns(896, $valMobile4);
         padding: sizeIns(64, $valMobile4) 0 0;
+        margin: sizeIns(-100, $valMobile4) 0 0;
       }
     }
 

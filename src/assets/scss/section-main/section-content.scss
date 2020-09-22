@@ -34,6 +34,10 @@
   .section-3 & {
     &__left {
       margin: 0 sizeIns(55, $valLeptop1) 0 0;
+
+      @media ($mobile1) {
+        margin: 0;
+      }
     }
 
     &__right {

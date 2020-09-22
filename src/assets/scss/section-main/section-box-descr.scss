@@ -32,6 +32,7 @@
 
       @media ($mobile1) {
         @include fzElMob ($fz, 14);
+        color: $c-main-light;
         margin: 0 0 marginIns(14, $valMobile4);
       }
     }
@@ -43,16 +44,24 @@
 
       @media ($mobile1) {
         @include fzElMob ($fz, 24);
-        color: $c-main-light;
+        //color: $c-main-light;
       }
     }
   }
 
   .section-4 & {
-    margin: marginIns(-30, $valLeptop1) 0 marginIns(60, $valLeptop1);
+    margin: marginIns(-30, $valLeptop1) 0 marginIns(135, $valLeptop1);
 
     @media ($mobile1) {
       margin: 0 0 marginIns(17, $valMobile4);
+    }
+  }
+
+  .section-3 & {
+    width: sizeIns(616, $valLeptop1);
+
+    @media ($mobile1) {
+      width: auto;
     }
   }
 }

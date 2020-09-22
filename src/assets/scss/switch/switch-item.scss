@@ -34,7 +34,7 @@
     @media ($mobile1) {
       @include fzElMob($fz, 18);
       @include heightIns(35, $valMobile4);
-      color: $c-main-light;
+      //color: $c-main-light;
     }
   }
 

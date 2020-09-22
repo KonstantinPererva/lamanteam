@@ -28,6 +28,14 @@
       }
     }
 
+    @media (hover: hover) {
+      &:hover {
+        & svg path {
+          fill: #007aff;
+        }
+      }
+    }
+
     &:last-child {
       margin: 0;
     }

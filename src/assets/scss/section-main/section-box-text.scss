@@ -8,7 +8,7 @@
   color: $c-main-dark;
 
   @media ($mobile1) {
-    color: $c-main-light;
+    //color: $c-main-light;
     @include fzElMob ($fz, 14);
   }
 

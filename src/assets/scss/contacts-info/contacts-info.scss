@@ -36,10 +36,20 @@
         height: 100%;
 
         & path {
+          transition: 150ms;
+
           @media ($mobile1) {
             .header & {
               fill: $c-main-light;
             }
+          }
+        }
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          & svg path {
+            fill: #007aff;
           }
         }
       }
@@ -52,6 +62,7 @@
       @include fzEl ($fz, 24);
       color: $c-main-dark;
       white-space: nowrap;
+      transition: 150ms;
 
       @media ($mobile1) {
         @include fzElMob ($fz, 12);
@@ -78,6 +89,12 @@
               color: $c-main-light;
             }
           }
+        }
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          color: #007aff;
         }
       }
     }

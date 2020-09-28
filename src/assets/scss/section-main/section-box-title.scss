@@ -27,7 +27,7 @@
     margin: 0 0 marginIns(155, $valLeptop1);
 
     @media ($mobile1) {
-      //color: $c-main-light;
+      margin: 0 0 marginIns(15, $valMobile4);
     }
   }
 }

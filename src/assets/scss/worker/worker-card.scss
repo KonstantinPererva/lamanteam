@@ -64,7 +64,7 @@
     @media ($mobile1) {
       width: sizeIns(200, $valMobile4);
       height: sizeIns(200, $valMobile4);
-      margin: 0 auto sizeIns(41, $valMobile4);
+      margin: 0 auto sizeIns(15, $valMobile4);
     }
 
     & img {
@@ -142,7 +142,7 @@
     @media ($mobile1) {
       width: sizeIns(170, $valMobile4);
       height: sizeIns(170, $valMobile4);
-      margin: 0 auto sizeIns(27, $valMobile4);
+      margin: 0 auto sizeIns(14, $valMobile4);
     }
   }
 

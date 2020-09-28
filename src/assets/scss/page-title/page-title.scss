@@ -1,23 +1,30 @@
 .page-title {
+  display: block;
   font-style: normal;
   font-weight: bold;
   font-family: $f-p;
   @include fzEl ($fz, 64);
-  margin: 0 0 marginIns(50, $valLeptop1);
+  margin: 0 0 marginIns(80, $valLeptop1);
   line-height: 95%;
   color: $c-main-dark;
 
   @media ($mobile1) {
     @include fzElMob ($fz, 24);
-    margin: 0 0 marginIns(17, $valMobile4);
+    margin: 0 0 marginIns(20, $valMobile4);
   }
 
   & span {
     display: block;
 
-    & + span {
+    &.small {
       display: block;
-      margin: marginIns(30, $valLeptop1) 0 0;
+      @include fzEl ($fz, 44);
+      margin: marginIns(50, $valLeptop1) 0 0;
+
+      @media ($mobile1) {
+        @include fzElMob ($fz, 16);
+        margin: marginIns(20, $valMobile4) 0 0;
+      }
     }
   }
 }

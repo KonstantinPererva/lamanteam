@@ -5,7 +5,7 @@
     margin: sizeIns(60, $valLeptop1) 0 sizeIns(60, $valLeptop1);
 
     @media ($mobile1) {
-      margin: sizeIns(60, $valMobile4) 0 sizeIns(25, $valMobile4);
+      margin: sizeIns(10, $valMobile4) 0 sizeIns(10, $valMobile4);
     }
   }
 
@@ -14,7 +14,11 @@
   }
 
   &__item {
-    margin: sizeIns(25, $valLeptop1) 0;
+    margin: sizeIns(18, $valLeptop1) 0;
+
+    @media ($mobile1) {
+      margin: sizeIns(4, $valMobile4) 0;
+    }
 
     &:last-child {
       margin-bottom: 0;

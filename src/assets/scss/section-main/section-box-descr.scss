@@ -53,15 +53,23 @@
     margin: marginIns(-30, $valLeptop1) 0 marginIns(135, $valLeptop1);
 
     @media ($mobile1) {
-      margin: 0 0 marginIns(17, $valMobile4);
+      margin: 0 0 marginIns(18, $valMobile4);
     }
   }
 
   .section-3 & {
     width: sizeIns(616, $valLeptop1);
 
+    & p {
+      line-height: 125%;
+    }
+
     @media ($mobile1) {
       width: auto;
+
+      & p {
+        line-height: 130%;
+      }
     }
   }
 }

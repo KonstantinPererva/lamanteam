@@ -29,13 +29,24 @@
 
   &.active &__title {
     @include fzEl($fz, 30);
-    color: $c-main-dark;
 
     @media ($mobile1) {
       @include fzElMob($fz, 18);
       @include heightIns(35, $valMobile4);
       //color: $c-main-light;
     }
+  }
+
+  &.active:nth-child(1) &__title {
+    color: #122960;
+  }
+
+  &.active:nth-child(2) &__title {
+    color: #0E4F13;
+  }
+
+  &.active:nth-child(3) &__title {
+    color: #9B0D1B;
   }
 
   &:before {
@@ -45,16 +56,36 @@
     margin: 0 auto;
     background-image: url(/assets/img/logo-small.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: 70%;
+    background-position: center;
 
     @media ($mobile1) {
       @include boxSizeIns(35, 35, $valMobile4);
     }
   }
 
+  &.active:nth-child(1):before {
+    background-position: 0 0;
+  }
+
+  &.active:nth-child(2):before {
+    background-position: 0 sizeIns(-74, $valLeptop1);
+
+    @media ($mobile1) {
+      background-position: 0 sizeIns(-52, $valMobile4);
+    }
+  }
+
+  &.active:nth-child(3):before {
+    background-position: 0 sizeIns(-148, $valLeptop1);
+
+    @media ($mobile1) {
+      background-position: 0 sizeIns(-103, $valMobile4);
+    }
+  }
+
   &.active:before {
-    background-image: url(/assets/img/logo.png);
-    background-size: 98%;
+    background-image: url(/assets/img/sprite.png);
+    background-size: cover;
   }
 }

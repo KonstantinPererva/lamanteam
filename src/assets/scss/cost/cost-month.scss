@@ -2,13 +2,13 @@
   font-family: $f-p;
   font-style: normal;
   font-weight: bold;
-  @include fzEl ($fz, 74);
+  @include fzEl ($fz, 86);
   line-height: 95%;
-  color: #00a2e4;
+  color: #008fc6;
   margin: 0 0 marginIns(53, $valLeptop1);
 
   @media ($mobile1) {
-    @include fzElMob ($fz, 36);
+    @include fzElMob ($fz, 64);
     margin: 0 0 sizeIns(22, $valMobile4);
   }
 }

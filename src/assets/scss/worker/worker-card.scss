@@ -104,8 +104,8 @@
 
   &__list {
     list-style: none;
-    margin: sizeIns(10, $valLeptop1) 0 0;
-    padding: sizeIns(10, $valLeptop1);
+    margin: sizeIns(5, $valLeptop1) 0 0;
+    padding: sizeIns(5, $valLeptop1);
     display: none;
     width: 100%;
     color: #fff;
@@ -114,7 +114,7 @@
     @include fzEl ($fz, 18);
 
     & li {
-      margin: 0 0 sizeIns(10, $valLeptop1);
+      margin: 0 0 sizeIns(2, $valLeptop1);
     }
 
     @media ($mobile1) {

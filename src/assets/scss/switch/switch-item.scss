@@ -52,7 +52,7 @@
   &:before {
     content: '';
     display: block;
-    @include boxSizeIns(50, 50, $valLeptop1);
+    @include boxSizeIns(50, 52, $valLeptop1);
     margin: 0 auto;
     background-image: url(/assets/img/logo-small.png);
     background-repeat: no-repeat;
@@ -60,27 +60,27 @@
     background-position: center;
 
     @media ($mobile1) {
-      @include boxSizeIns(35, 35, $valMobile4);
+      @include boxSizeIns(35, 37, $valMobile4);
     }
   }
 
   &.active:nth-child(1):before {
-    background-position: 0 0;
+    background-position: 0 sizeIns(1, $valLeptop1);
   }
 
   &.active:nth-child(2):before {
-    background-position: 0 sizeIns(-74, $valLeptop1);
+    background-position: 0 sizeIns(-73, $valLeptop1);
 
     @media ($mobile1) {
-      background-position: 0 sizeIns(-52, $valMobile4);
+      background-position: 0 sizeIns(-51, $valMobile4);
     }
   }
 
   &.active:nth-child(3):before {
-    background-position: 0 sizeIns(-148, $valLeptop1);
+    background-position: 0 sizeIns(-147, $valLeptop1);
 
     @media ($mobile1) {
-      background-position: 0 sizeIns(-103, $valMobile4);
+      background-position: 0 sizeIns(-102, $valMobile4);
     }
   }
 

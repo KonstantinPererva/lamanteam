@@ -4,30 +4,10 @@
   &.section {
     &-1 {
       padding: sizeIns(110, $valLeptop1) 0 0;
-      @include heightIns(1590, $valLeptop1);
-
-      & .banner {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 0;
-
-        @media ($mobile1) {
-          top: sizeIns(50, $valMobile4);
-        }
-
-        & img {
-          //width: 100%;
-          height: 100%;
-
-          @media ($mobile1) {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
+      //@include heightIns(1590, $valLeptop1);
+      height: 100vh;
+      max-height: sizeIns(1080, $valLeptop1);
+      overflow: hidden;
 
       @media ($mobile1) {
         @include heightIns(704, $valMobile4);
@@ -38,8 +18,8 @@
     &-2 {
       position: relative;
       z-index: 1;
-      margin: sizeIns(-300, $valLeptop1) 0 0;
-      padding: sizeIns(221, $valLeptop1) 0 0;
+      margin: sizeIns(-75, $valLeptop1) 0 0;
+      padding: sizeIns(150, $valLeptop1) 0 0;
       @include heightIns(1660, $valLeptop1);
 
       @media ($mobile1) {

@@ -1,0 +1,8 @@
+.main-slider {
+  max-width: sizeIns(700, $valLeptop1);
+  margin: 0;
+
+  @media ($mobile1) {
+    max-width: none;
+  }
+}

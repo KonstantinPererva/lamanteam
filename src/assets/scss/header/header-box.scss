@@ -1,8 +1,10 @@
 .header-box {
   display: flex;
   align-items: center;
+  max-width: sizeIns(640, $valLeptop1);
 
   @media ($mobile1) {
+    max-width: none;
     height: sizeIns(54, $valMobile4);
   }
 }

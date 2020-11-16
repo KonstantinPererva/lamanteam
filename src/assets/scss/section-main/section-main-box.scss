@@ -8,3 +8,11 @@
     }
   }
 }
+
+.section-main-box-hold {
+  max-width: sizeIns(700, $valLeptop1);
+
+  @media ($mobile1) {
+    max-width: none;
+  }
+}

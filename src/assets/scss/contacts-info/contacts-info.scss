@@ -13,10 +13,10 @@
 
     @media ($mobile1) {
       .header & {
-        margin: 0 marginIns(60, $valMobile4) 0 0;
+        margin: 0 marginIns(35, $valMobile4) 0 0;
       }
 
-      margin: 0 marginIns(17, $valMobile4) 0 0;
+      margin: 0 marginIns(35, $valMobile4) 0 0;
     }
 
     &__ico {

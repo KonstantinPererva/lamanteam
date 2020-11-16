@@ -13,6 +13,7 @@
 
     @media ($mobile1) {
       @include boxSizeIns(15, 15, $valMobile4);
+      margin: 0 marginIns(15, $valMobile4) 0 0;
     }
 
     & svg {

@@ -105,10 +105,34 @@
   opacity: 0;
   padding: sizeIns(67, $valLeptop1);
 
-  @media ($tablet3) {
+  @media ($tablet2) {
     max-width: 340px;
     padding: 30px 20px;
     border-radius: 10px;
+  }
+
+  [data-popup="registration"] & {
+    height: sizeIns(550, $valLeptop1);
+
+    @media ($tablet2) {
+      height: 290px;
+    }
+  }
+
+  [data-popup="partner"] & {
+    height: sizeIns(550, $valLeptop1);
+
+    @media ($tablet2) {
+      height: 290px;
+    }
+  }
+
+  [data-popup="full-terms"] & {
+    height: sizeIns(602, $valLeptop1);
+
+    @media ($tablet2) {
+      height: 450px;
+    }
   }
 }
 
@@ -117,6 +141,14 @@
   -ms-transform: scale(1);
   transform: scale(1);
   opacity: 1
+}
+
+.popup-body {
+  height: 100%;
+
+  & iframe {
+    height: 100% !important;
+  }
 }
 
 .form-main-input {

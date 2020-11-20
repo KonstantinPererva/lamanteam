@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru" class="page-index">
+<html lang="ru" style="background: #84d1f4;">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport"
@@ -9,28 +9,60 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Podkova:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/libs/swiper/swiper.min.css">
-<!--    <link rel="stylesheet" href="./assets/css/style.css">-->
+
+    <script src="assets/libs/swiper/swiper.min.js"></script>
 </head>
 
 <body>
+    <style>
+        body {
+            opacity: 0;
+        }
+    </style>
+
+    <script>
+        document.body.style.transition = '300ms';
+
+        window.addEventListener('load', function() {
+            setTimeout(function () {
+                document.body.style.opacity = '1';
+                document.body.style.transition = '0';
+            },300);
+        });
+    </script>
+
+    <noscript>
+        <style>
+            body {
+                opacity: 0;
+                animation: view 300ms linear forwards;
+                animation-delay: 2000ms;
+            }
+            @keyframes view {
+                0% {opacity: 0}
+                100% {opacity: 1;}
+            }
+        </style>
+    </noscript>
+
     <div class="wrapper">
         <main class="body-main">
             <div class="section-main section-1">
                 <div class="swiper-container banner-slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-hash="slide1">
                             <div class="section-main section-1">
-                                <picture class="banner">
+                                <picture class="banner banner_1">
                                     <source srcset="/assets/img/mob-banner-1.jpg" media="(max-width: 767px)">
 
                                     <img src="/assets/img/banner-1.jpg" alt="banner" />
                                 </picture>
 
-                                <div class="bubble wow fadeIn" data-wow-duration="1500ms" data-wow-delay="200ms">
+                                <div class="bubble">
                                     <img src="/assets/img/bulb_1.png" alt="bulb" />
                                 </div>
 
-                                <header class="header animation" data-animated-in="fadeInLeft" data-animated-out="fadeOutLeft">
+                                <header class="header">
                                     <div class="header__mob-bg" style="display: none">
                                         <img src="/assets/img/mob-bg-header.png" alt="bg">
                                     </div>
@@ -80,7 +112,7 @@
                                     </div>
                                 </header>
 
-                                <div class="page-content wow fadeInLeft" data-wow-duration="600ms" data-wow-delay="600ms">
+                                <div class="page-content">
                                     <div class="section-main-box">
                                         <div class="section-main-box__hold">
                                             <div class="page-title animation" data-animated-in="fadeInLeft" data-animated-out="fadeOutLeft">
@@ -93,8 +125,8 @@
                                                 <span>Уже сейчас в команде тренируется  <br />40+ учеников, стань одним из них.</span>
                                             </div>
 
-                                            <div class="section-main-box__button wow fadeUp" data-wow-duration="600ms" data-wow-delay="200ms" data-wow-offset="100">
-                                                <button class="button-main button-main_dark button-main_t-l animation" data-open-popup="registration" data-animated-in="fadeInLeft" data-animated-out="fadeOutLeft">Хочу плавать</button>
+                                            <div class="section-main-box__button">
+                                                <button class="button-main button-main_dark button-main_t-l animation" data-open-popup="registration" data-animated-in="fadeInUp" data-animated-out="fadeOutDown">Хочу плавать</button>
                                             </div>
                                         </div>
                                     </div>
@@ -102,19 +134,19 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-hash="slide2">
                             <div class="section-main section-1">
                                 <picture class="banner banner_2">
-                                    <source srcset="/assets/img/mob-banner-1.jpg" media="(max-width: 767px)">
+                                    <source srcset="/assets/img/mob-bg_slide_2.jpg" media="(max-width: 767px)">
 
                                     <img src="/assets/img/bg_slide_2.jpg" alt="banner" />
                                 </picture>
 
-                                <div class="bubble wow fadeIn" data-wow-duration="1500ms" data-wow-delay="200ms">
+                                <div class="bubble">
                                     <img src="/assets/img/bulb_1.png" alt="bulb" />
                                 </div>
 
-                                <header class="header animation" data-animated-in="fadeInLeft" data-animated-out="fadeOutLeft">
+                                <header class="header">
                                     <div class="header__mob-bg" style="display: none">
                                         <img src="/assets/img/mob-bg-header.png" alt="bg">
                                     </div>
@@ -164,7 +196,7 @@
                                     </div>
                                 </header>
 
-                                <div class="page-content wow fadeInLeft" data-wow-duration="600ms" data-wow-delay="600ms">
+                                <div class="page-content">
                                     <div class="section-main-box">
                                         <div class="section-main-box__hold">
                                             <div class="page-title animation" data-animated-in="fadeInLeft" data-animated-out="fadeOutLeft">
@@ -177,14 +209,32 @@
                                                 <span>Подготовим к заплывам с уровня <br />"никогда не был в бассейне".</span>
                                             </div>
 
-                                            <div class="section-main-box__button wow fadeUp" data-wow-duration="600ms" data-wow-delay="200ms" data-wow-offset="100">
-                                                <button class="button-main button-main_dark button-main_t-l animation" data-open-popup="registration" data-animated-in="fadeInLeft" data-animated-out="fadeOutLeft">Начать подготовку</button>
+                                            <div class="section-main-box__button">
+                                                <button class="button-main button-main_dark button-main_t-l animation" data-open-popup="registration" data-animated-in="fadeInUp" data-animated-out="fadeOutDown">Начать подготовку</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="navigation-button">
+                        <span class="navigation-button-prev">
+                            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 25.5C2 12.5213 12.5213 2 25.5 2C38.4787 2 49 12.5213 49 25.5C49 38.4787 38.4787 49 25.5 49C12.5213 49 2 38.4787 2 25.5Z" fill="#4667F6" fill-opacity="0.5"/>
+                                <path d="M0.499998 25.5C0.499998 39.2895 11.7105 50.5 25.5 50.5C39.2895 50.5 50.5 39.2895 50.5 25.5C50.5 11.7105 39.2895 0.499998 25.5 0.499998C11.7105 0.499998 0.499998 11.7105 0.499998 25.5ZM46.9211 25.5C46.9211 37.2895 37.2895 46.9211 25.5 46.9211C13.7105 46.9211 4.07895 37.2895 4.07895 25.5C4.07895 13.7105 13.7105 4.07895 25.5 4.07895C37.2895 4.07895 46.9211 13.7105 46.9211 25.5Z" fill="white" fill-opacity="0.9"/>
+                                <path d="M18.3947 24.2368C18.0789 24.5526 17.8684 25.0263 17.8684 25.5C17.8684 25.9737 18.0789 26.4474 18.3947 26.7632L28.0263 36.3947C28.7105 37.0789 29.8684 37.0789 30.5526 36.3947C31.2368 35.7105 31.2368 34.5526 30.5526 33.8684L22.2368 25.5L30.5526 17.1842C30.9211 16.8158 31.0789 16.3947 31.0789 15.9211C31.0789 15.4474 30.9211 14.9737 30.5526 14.6579C29.8684 13.9737 28.7105 13.9737 28.0263 14.6579L18.3947 24.2368Z" fill="white" fill-opacity="0.9"/>
+                            </svg>
+                        </span>
+
+                        <span class="navigation-button-next">
+                            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M49 25.5C49 38.4787 38.4787 49 25.5 49C12.5213 49 2 38.4787 2 25.5C2 12.5213 12.5213 2 25.5 2C38.4787 2 49 12.5213 49 25.5Z" fill="#4667F6" fill-opacity="0.5"/>
+                                <path d="M50.5 25.5C50.5 11.7105 39.2895 0.5 25.5 0.5C11.7105 0.5 0.5 11.7105 0.5 25.5C0.5 39.2895 11.7105 50.5 25.5 50.5C39.2895 50.5 50.5 39.2895 50.5 25.5ZM4.07895 25.5C4.07895 13.7105 13.7105 4.07895 25.5 4.07895C37.2895 4.07895 46.9211 13.7105 46.9211 25.5C46.9211 37.2895 37.2895 46.9211 25.5 46.9211C13.7105 46.9211 4.07895 37.2895 4.07895 25.5Z" fill="white" fill-opacity="0.9"/>
+                                <path d="M32.6053 26.7632C32.9211 26.4474 33.1316 25.9737 33.1316 25.5C33.1316 25.0263 32.9211 24.5526 32.6053 24.2368L22.9737 14.6053C22.2895 13.9211 21.1316 13.9211 20.4474 14.6053C19.7632 15.2895 19.7632 16.4474 20.4474 17.1316L28.7632 25.5L20.4474 33.8158C20.0789 34.1842 19.9211 34.6053 19.9211 35.0789C19.9211 35.5526 20.0789 36.0263 20.4474 36.3421C21.1316 37.0263 22.2895 37.0263 22.9737 36.3421L32.6053 26.7632Z" fill="white" fill-opacity="0.9"/>
+                            </svg>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -245,7 +295,7 @@
                                 </div>
                             </div>
 
-                            <div class="section-button wow fadeUp" data-wow-duration="600ms" data-wow-delay="200ms" data-wow-offset="100">
+                            <div class="section-button wow fadeInUp" data-wow-duration="600ms" data-wow-delay="200ms" data-wow-offset="100">
                                 <button class="button-main button-main_blue" data-open-popup="registration">Присоединится к команде</button>
                             </div>
                         </div>
@@ -485,11 +535,11 @@
                     </div>
                 </div>
 
-                <div class="bubble bubble_sm wow fadeUp" data-wow-duration="800ms" data-wow-delay="200ms" data-wow-offset="150">
+                <div class="bubble bubble_sm wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms" data-wow-offset="150">
                     <img src="/assets/img/bulb_2.png" alt="bubble" />
                 </div>
 
-                <div class="bubble bubble_big wow fadeUp" data-wow-duration="800ms" data-wow-delay="200ms" data-wow-offset="150">
+                <div class="bubble bubble_big wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms" data-wow-offset="150">
                     <img src="/assets/img/bulb_3.png" alt="bubble" />
                 </div>
             </div>
@@ -553,7 +603,7 @@
                     </div>
 
                     <div class="page-content">
-                        <div class="worker-row grid-3 wow fadeUp" data-wow-duration="800ms" data-wow-delay="150ms" data-wow-offset="250">
+                        <div class="worker-row grid-3 wow fadeInUp" data-wow-duration="800ms" data-wow-delay="150ms" data-wow-offset="250">
                             <div class="worker-card worker-card_big">
                                 <div class="worker-card__inner">
                                     <div class="worker-card__img">
@@ -598,7 +648,6 @@
                                     <ul class="worker-card__list">
                                     <li>- Основатель LAMANTEAM — топ-1 команды по плаванию в Харькове</li>
                                     <li>- Чемпион Украины по триатлону</li>
-                                    <li>- Основатель LAMANTEAM — топ-1 команды по плаванию в Харькове</li>
                                 </ul>
                                 </div>
                             </div>
@@ -630,7 +679,7 @@
                             </div>
                         </div>
 
-                        <div class="worker-row grid-3 wow fadeUp" data-wow-duration="800ms" data-wow-delay="300ms" data-wow-offset="250">
+                        <div class="worker-row grid-3 wow fadeInUp" data-wow-duration="800ms" data-wow-delay="300ms" data-wow-offset="250">
                             <div class="worker-card worker-card_sm">
                                 <div class="worker-card__inner">
                                     <div class="worker-card__img">
@@ -756,7 +805,7 @@
                             </div>
                         </div>
 
-                        <div class="schedule__button wow fadeUp" data-wow-duration="800ms" data-wow-delay="300ms" data-wow-offset="50">
+                        <div class="schedule__button wow fadeInUp" data-wow-duration="800ms" data-wow-delay="300ms" data-wow-offset="50">
                             <button class="button-main button-main_blue" data-open-popup="registration">Присоединиться</button>
                         </div>
                     </div>
@@ -794,7 +843,7 @@
                             </div>
                         </div>
 
-                        <div class="cost-box-col wow fadeUp" data-wow-duration="800ms" data-wow-delay="200ms" data-wow-offset="250">
+                        <div class="cost-box-col wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms" data-wow-offset="250">
                             <div class="cost-main-addition box-mobile">
                                 <span>* оплата в гривневом эквиваленте по текущему курсу доллара</span>
                             </div>
@@ -827,7 +876,7 @@
                             <span>* оплата в гривневом эквиваленте по текущему курсу доллара</span>
                         </div>
 
-                        <div class="cost-bottom__button wow fadeUp" data-wow-duration="800ms" data-wow-delay="200ms" data-wow-offset="50">
+                        <div class="cost-bottom__button wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms" data-wow-offset="50">
                             <button class="button-main button-main_dark" data-open-popup="full-terms">Полные условия</button>
                         </div>
                     </div>
@@ -1048,9 +1097,8 @@
         </div>
     </div>
 
-    <script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>
-    <script src="assets/libs/swiper/swiper.min.js"></script>
-    <script src="assets/libs/masked.input.js"></script>
+<!--    <script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>-->
+<!--    <script src="assets/libs/masked.input.js"></script>-->
     <script src="assets/libs/wow.min.js"></script>
 </body>
 </html>

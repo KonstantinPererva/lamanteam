@@ -7,11 +7,18 @@
       //@include heightIns(1590, $valLeptop1);
       height: 100vh;
       max-height: sizeIns(1080, $valLeptop1);
+      min-height: sizeIns(900, $valLeptop1);
       overflow: hidden;
+
+      @media (max-height: 900px) {
+        padding: sizeIns(70, $valLeptop1) 0 0;
+      }
 
       @media ($mobile1) {
         @include heightIns(704, $valMobile4);
-        padding: 0;
+        padding: 0 !important;
+        max-height: none;
+        min-height: auto;
       }
     }
 

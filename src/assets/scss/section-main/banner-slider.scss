@@ -7,18 +7,23 @@
   z-index: 0;
 
   @media ($mobile1) {
-    top: sizeIns(50, $valMobile4);
+    top: 0;
   }
 
   & img {
     width: 100%;
-    //height: 100%;
     height: auto;
     max-height: none;
 
     @media ($mobile1) {
       width: 100%;
       height: auto;
+    }
+  }
+
+  & .banner_1 {
+    @media ($mobile1) {
+      top: sizeIns(50, $valMobile4)
     }
   }
 
@@ -31,6 +36,43 @@
       width: 62%;
       height: auto;
       max-height: none;
+
+      @media ($mobile1) {
+        width: 100%;
+      }
     }
+  }
+}
+
+.navigation-button {
+  @media ($mobile1) {
+    display: none;
+  }
+
+  &-prev, &-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: sizeIns(50, $valLeptop1);
+    height: sizeIns(50, $valLeptop1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+
+    & svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-prev {
+    left: sizeIns(30, $valLeptop1);
+  }
+
+  &-next {
+    right: sizeIns(30, $valLeptop1);
   }
 }

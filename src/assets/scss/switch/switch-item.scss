@@ -65,27 +65,27 @@
   }
 
   &.active:nth-child(1):before {
-    background-position: 0 sizeIns(1, $valLeptop1);
+    background-position: 0 sizeIns(2, $valLeptop1);
   }
 
   &.active:nth-child(2):before {
-    background-position: 0 sizeIns(-73, $valLeptop1);
+    background-position: 0 sizeIns(-68, $valLeptop1);
 
     @media ($mobile1) {
-      background-position: 0 sizeIns(-51, $valMobile4);
+      background-position: 0 sizeIns(-47, $valMobile4);
     }
   }
 
   &.active:nth-child(3):before {
-    background-position: 0 sizeIns(-147, $valLeptop1);
+    background-position: 0 sizeIns(-138, $valLeptop1);
 
     @media ($mobile1) {
-      background-position: 0 sizeIns(-102, $valMobile4);
+      background-position: 0 sizeIns(-96, $valMobile4);
     }
   }
 
   &.active:before {
     background-image: url(/assets/img/sprite.png);
-    background-size: cover;
+    background-size: 94%;
   }
 }

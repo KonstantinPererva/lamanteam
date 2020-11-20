@@ -1,10 +1,14 @@
+body {
+  transition: 300ms;
+}
+
 @import "utils/vars";
 @import "utils/mixins";
 //@import "utils/fonts";
 @import "utils/base";
 
 
-@import "../css/animate.min.css";
+@import "../css/animate.min.scss";
 @import "button/style.scss";
 @import "header/style.scss";
 @import "contacts-info/style.scss";
@@ -20,3 +24,7 @@
 @import "cost/style.scss";
 @import "sponsors/style.scss";
 @import "popup/style.scss";
+
+body {
+  opacity: 1 !important;
+}

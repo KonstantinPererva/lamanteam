@@ -16,7 +16,7 @@
     @include boxSizeIns(830, 830, $valLeptop1);
 
     @media ($mobile1) {
-      @include boxSizeIns(360, 327, $valMobile4);
+      @include boxSizeIns(360, 258, $valMobile4);
     }
   }
 
